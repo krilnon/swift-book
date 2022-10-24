@@ -1,7 +1,7 @@
-# ``TSPL``
+# TSPL
 
 @Metadata {
-  @DisplayName("The Swift Programming Language")
+  @TechnologyRoot
 }
 
 ## Topics
