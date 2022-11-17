@@ -18,6 +18,11 @@
   },
   "kind" : "article",
   "metadata" : {
+    "modules" : [
+      {
+        "name" : "The Swift Programming Language"
+      }
+    ],
     "title" : "Advanced Operators"
   },
   "primaryContentSections" : [
@@ -7042,6 +7047,18 @@
   },
   "sections" : [
 
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/the-swift-programming-language\/advancedoperators"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
   ]
 , 
 "references": {
@@ -7260,7 +7277,7 @@
 
   ],
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/TSPL",
-  "kind" : "article",
+  "kind" : "symbol",
   "role" : "collection",
   "title" : "The Swift Programming Language",
   "type" : "topic",

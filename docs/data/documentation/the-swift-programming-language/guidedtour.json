@@ -18,6 +18,11 @@
   },
   "kind" : "article",
   "metadata" : {
+    "modules" : [
+      {
+        "name" : "The Swift Programming Language"
+      }
+    ],
     "title" : "A Swift Tour"
   },
   "primaryContentSections" : [
@@ -726,7 +731,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "To create an empty array or dictionary,",
+              "text" : "You also use brackets to write an empty array or dictionary.",
               "type" : "text"
             },
             {
@@ -734,32 +739,7 @@
               "type" : "text"
             },
             {
-              "text" : "use the initializer syntax.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "let emptyArray: [String] = []",
-            "let emptyDictionary: [String: Float] = [:]"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "If type information can be inferred,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "you can write an empty array as ",
+              "text" : "For an array, write ",
               "type" : "text"
             },
             {
@@ -767,11 +747,15 @@
               "type" : "codeVoice"
             },
             {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
               "text" : " ",
               "type" : "text"
             },
             {
-              "text" : "and an empty dictionary as ",
+              "text" : "and for a dictionary, write ",
               "type" : "text"
             },
             {
@@ -779,23 +763,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " —",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "for example, when you set a new value for a variable",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "or pass an argument to a function.",
+              "text" : ".",
               "type" : "text"
             }
           ],
@@ -805,6 +773,39 @@
           "code" : [
             "fruits = []",
             "occupations = [:]"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If you’re assigning an empty array or dictionary to a new variable,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or another place where there isn’t any type information,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you need to specify the type.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let emptyArray: [String] = []",
+            "let emptyDictionary: [String: Float] = [:]"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -5392,6 +5393,18 @@
   },
   "sections" : [
 
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/the-swift-programming-language\/guidedtour"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
   ]
 , 
 "references": {
@@ -5400,7 +5413,7 @@
 
   ],
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/TSPL",
-  "kind" : "article",
+  "kind" : "symbol",
   "role" : "collection",
   "title" : "The Swift Programming Language",
   "type" : "topic",

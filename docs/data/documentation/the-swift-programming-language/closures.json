@@ -18,6 +18,11 @@
   },
   "kind" : "article",
   "metadata" : {
+    "modules" : [
+      {
+        "name" : "The Swift Programming Language"
+      }
+    ],
     "title" : "Closures"
   },
   "primaryContentSections" : [
@@ -6136,6 +6141,18 @@
   },
   "sections" : [
 
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/the-swift-programming-language\/closures"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
   ]
 , 
 "references": {
@@ -6144,7 +6161,7 @@
 
   ],
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/TSPL",
-  "kind" : "article",
+  "kind" : "symbol",
   "role" : "collection",
   "title" : "The Swift Programming Language",
   "type" : "topic",

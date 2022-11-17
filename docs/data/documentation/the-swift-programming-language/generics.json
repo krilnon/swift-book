@@ -18,6 +18,11 @@
   },
   "kind" : "article",
   "metadata" : {
+    "modules" : [
+      {
+        "name" : "The Swift Programming Language"
+      }
+    ],
     "title" : "Generics"
   },
   "primaryContentSections" : [
@@ -8965,15 +8970,6 @@
           "type" : "codeListing"
         },
         {
-          "inlineContent" : [
-            {
-              "text" : "}",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
           "anchor" : "Generic-Subscripts",
           "level" : 2,
           "text" : "Generic Subscripts",
@@ -9301,6 +9297,18 @@
   },
   "sections" : [
 
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/the-swift-programming-language\/generics"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
   ]
 , 
 "references": {
@@ -9309,7 +9317,7 @@
 
   ],
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/TSPL",
-  "kind" : "article",
+  "kind" : "symbol",
   "role" : "collection",
   "title" : "The Swift Programming Language",
   "type" : "topic",

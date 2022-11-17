@@ -18,6 +18,11 @@
   },
   "kind" : "article",
   "metadata" : {
+    "modules" : [
+      {
+        "name" : "The Swift Programming Language"
+      }
+    ],
     "title" : "Error Handling"
   },
   "primaryContentSections" : [
@@ -3036,6 +3041,18 @@
   },
   "sections" : [
 
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/the-swift-programming-language\/errorhandling"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
   ]
 , 
 "references": {
@@ -3044,7 +3061,7 @@
 
   ],
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/TSPL",
-  "kind" : "article",
+  "kind" : "symbol",
   "role" : "collection",
   "title" : "The Swift Programming Language",
   "type" : "topic",
