@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "A ",
@@ -6295,7 +6289,7 @@
               "type" : "text"
             },
             {
-              "text" : "a value that’s guaranteed to never escape—",
+              "text" : "a value that’s guaranteed to never escape —",
               "type" : "text"
             },
             {
@@ -6303,7 +6297,7 @@
               "type" : "text"
             },
             {
-              "text" : "such as an in-out parameter—",
+              "text" : "such as an in-out parameter —",
               "type" : "text"
             },
             {
@@ -6658,7 +6652,7 @@
               ]
             }
           ],
-          "type" : "unorderedList"
+          "type" : "orderedList"
         },
         {
           "inlineContent" : [
@@ -9938,7 +9932,7 @@
               "type" : "text"
             },
             {
-              "text" : "zero or more values—called ",
+              "text" : "zero or more values — called ",
               "type" : "text"
             },
             {
@@ -9951,7 +9945,7 @@
               "type" : "emphasis"
             },
             {
-              "text" : "—",
+              "text" : " —",
               "type" : "text"
             },
             {
@@ -16021,7 +16015,7 @@
               "type" : "text"
             },
             {
-              "text" : "and for guidance about how to access optional protocol members—",
+              "text" : "and for guidance about how to access optional protocol members —",
               "type" : "text"
             },
             {
@@ -16029,7 +16023,7 @@
               "type" : "text"
             },
             {
-              "text" : "for example, when you’re not sure whether a conforming type implements them—",
+              "text" : "for example, when you’re not sure whether a conforming type implements them —",
               "type" : "text"
             },
             {
@@ -20344,7 +20338,7 @@
               "type" : "text"
             },
             {
-              "text" : "A deinitializer can be declared only in the body of a class declaration—",
+              "text" : "A deinitializer can be declared only in the body of a class declaration —",
               "type" : "text"
             },
             {
@@ -20352,7 +20346,7 @@
               "type" : "text"
             },
             {
-              "text" : "but not in an extension of a class—",
+              "text" : "but not in an extension of a class —",
               "type" : "text"
             },
             {
@@ -25779,7 +25773,7 @@
                         "type" : "codeVoice"
                       },
                       {
-                        "text" : " modifier and for guidance about how to access optional protocol members— for example, when you’re not sure whether a conforming type implements them— see ",
+                        "text" : " modifier and for guidance about how to access optional protocol members — for example, when you’re not sure whether a conforming type implements them — see ",
                         "type" : "text"
                       },
                       {

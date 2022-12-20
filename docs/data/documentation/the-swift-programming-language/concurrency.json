@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "Swift has built-in support for writing asynchronous and parallel code",
@@ -2784,7 +2778,7 @@
               "type" : "text"
             },
             {
-              "text" : "lets Swift handle some behaviors like propagating cancellation for you,",
+              "text" : "let Swift handle some behaviors like propagating cancellation for you,",
               "type" : "text"
             },
             {
@@ -3892,7 +3886,7 @@
               ]
             }
           ],
-          "type" : "unorderedList"
+          "type" : "orderedList"
         },
         {
           "inlineContent" : [
@@ -4714,8 +4708,8 @@
   "title" : "AsyncSequence",
   "titleInlineContent" : [
     {
-      "text" : "AsyncSequence",
-      "type" : "text"
+      "code" : "AsyncSequence",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -4726,8 +4720,8 @@
   "title" : "Sendable",
   "titleInlineContent" : [
     {
-      "text" : "Sendable",
-      "type" : "text"
+      "code" : "Sendable",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -4738,8 +4732,8 @@
   "title" : "Sequence",
   "titleInlineContent" : [
     {
-      "text" : "Sequence",
-      "type" : "text"
+      "code" : "Sequence",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -4750,8 +4744,8 @@
   "title" : "Task",
   "titleInlineContent" : [
     {
-      "text" : "Task",
-      "type" : "text"
+      "code" : "Task",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -4762,8 +4756,8 @@
   "title" : "Task.checkCancellation()",
   "titleInlineContent" : [
     {
-      "text" : "Task.checkCancellation()",
-      "type" : "text"
+      "code" : "Task.checkCancellation()",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -4774,8 +4768,8 @@
   "title" : "Task.isCancelled",
   "titleInlineContent" : [
     {
-      "text" : "Task.isCancelled",
-      "type" : "text"
+      "code" : "Task.isCancelled",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -4786,8 +4780,8 @@
   "title" : "Task.cancel()",
   "titleInlineContent" : [
     {
-      "text" : "Task.cancel()",
-      "type" : "text"
+      "code" : "Task.cancel()",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -4798,8 +4792,8 @@
   "title" : "Task.detached(priority:operation:)",
   "titleInlineContent" : [
     {
-      "text" : "Task.detached(priority:operation:)",
-      "type" : "text"
+      "code" : "Task.detached(priority:operation:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -4810,8 +4804,8 @@
   "title" : "Task.init(priority:operation:)",
   "titleInlineContent" : [
     {
-      "text" : "Task.init(priority:operation:)",
-      "type" : "text"
+      "code" : "Task.init(priority:operation:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -4822,8 +4816,8 @@
   "title" : "Task.sleep(until:tolerance:clock:)",
   "titleInlineContent" : [
     {
-      "text" : "Task.sleep(until:tolerance:clock:)",
-      "type" : "text"
+      "code" : "Task.sleep(until:tolerance:clock:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -4834,8 +4828,8 @@
   "title" : "TaskGroup",
   "titleInlineContent" : [
     {
-      "text" : "TaskGroup",
-      "type" : "text"
+      "code" : "TaskGroup",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",

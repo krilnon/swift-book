@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "In Swift, there are three kinds of statements: simple statements, compiler control statements,",
@@ -1054,7 +1048,7 @@
               "type" : "text"
             },
             {
-              "text" : "to obtain a value of an iterator type—that is,",
+              "text" : "to obtain a value of an iterator type — that is,",
               "type" : "text"
             },
             {
@@ -1449,7 +1443,16 @@
                       "type" : "emphasis"
                     },
                     {
-                      "text" : " is evaluated.If ",
+                      "text" : " is evaluated.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "If ",
                       "type" : "text"
                     },
                     {
@@ -1516,7 +1519,7 @@
               ]
             }
           ],
-          "type" : "unorderedList"
+          "type" : "orderedList"
         },
         {
           "inlineContent" : [
@@ -2165,7 +2168,16 @@
                       "type" : "emphasis"
                     },
                     {
-                      "text" : " is evaluated.If ",
+                      "text" : " is evaluated.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "If ",
                       "type" : "text"
                     },
                     {
@@ -2214,7 +2226,7 @@
               ]
             }
           ],
-          "type" : "unorderedList"
+          "type" : "orderedList"
         },
         {
           "inlineContent" : [
@@ -4163,7 +4175,7 @@
               "type" : "text"
             },
             {
-              "text" : "as if the evaluation is performed in source order—that is,",
+              "text" : "as if the evaluation is performed in source order — that is,",
               "type" : "text"
             },
             {
@@ -4294,7 +4306,7 @@
               "type" : "text"
             },
             {
-              "text" : "that may gain new enumeration cases in the future—",
+              "text" : "that may gain new enumeration cases in the future —",
               "type" : "text"
             },
             {
@@ -14006,8 +14018,8 @@
   "title" : "IteratorProtocol",
   "titleInlineContent" : [
     {
-      "text" : "IteratorProtocol",
-      "type" : "text"
+      "code" : "IteratorProtocol",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -14018,8 +14030,8 @@
   "title" : "Mirror.AncestorRepresentation",
   "titleInlineContent" : [
     {
-      "text" : "Mirror.AncestorRepresentation",
-      "type" : "text"
+      "code" : "Mirror.AncestorRepresentation",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -14030,8 +14042,8 @@
   "title" : "Sequence",
   "titleInlineContent" : [
     {
-      "text" : "Sequence",
-      "type" : "text"
+      "code" : "Sequence",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",

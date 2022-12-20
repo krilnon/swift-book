@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "There are two kinds of attributes in Swift —",
@@ -936,7 +930,16 @@
                       "type" : "emphasis"
                     },
                     {
-                      "text" : " consists of a string literal.You can apply the ",
+                      "text" : " consists of a string literal.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "You can apply the ",
                       "type" : "text"
                     },
                     {
@@ -1490,7 +1493,7 @@
               "type" : "text"
             },
             {
-              "text" : "protocol—like ",
+              "text" : "protocol — like ",
               "type" : "text"
             },
             {
@@ -1668,7 +1671,7 @@
               "type" : "text"
             },
             {
-              "text" : "so that callers can include duplicate parameter labels—",
+              "text" : "so that callers can include duplicate parameter labels —",
               "type" : "text"
             },
             {
@@ -2022,8 +2025,8 @@
               "overridingTitle" : "ExpressibleByStringLiteral",
               "overridingTitleInlineContent" : [
                 {
-                  "text" : "ExpressibleByStringLiteral",
-                  "type" : "text"
+                  "code" : "ExpressibleByStringLiteral",
+                  "type" : "codeVoice"
                 }
               ],
               "type" : "reference"
@@ -3472,7 +3475,7 @@
               "type" : "text"
             },
             {
-              "text" : "of the property’s value—returned by the ",
+              "text" : "of the property’s value — returned by the ",
               "type" : "text"
             },
             {
@@ -3480,7 +3483,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " method—instead of the",
+              "text" : " method — instead of the",
               "type" : "text"
             },
             {
@@ -3631,7 +3634,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Apply this attribute to any declaration that can be represented in Objective-C—",
+              "text" : "Apply this attribute to any declaration that can be represented in Objective-C —",
               "type" : "text"
             },
             {
@@ -5144,13 +5147,13 @@
           "code" : [
             "@propertyWrapper",
             "struct WrapperWithProjection {",
-            " var wrappedValue: Int",
-            " var projectedValue: SomeProjection {",
-            "     return SomeProjection(wrapper: self)",
-            " }",
+            "    var wrappedValue: Int",
+            "    var projectedValue: SomeProjection {",
+            "        return SomeProjection(wrapper: self)",
+            "    }",
             "}",
             "struct SomeProjection {",
-            " var wrapper: WrapperWithProjection",
+            "    var wrapper: WrapperWithProjection",
             "}",
             "",
             "struct SomeStruct {",
@@ -6259,7 +6262,16 @@
                       "type" : "text"
                     },
                     {
-                      "text" : "even in the case where that type is explicitly not being used.To solve this problem,",
+                      "text" : "even in the case where that type is explicitly not being used.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "To solve this problem,",
                       "type" : "text"
                     },
                     {
@@ -6412,7 +6424,16 @@
                       "type" : "text"
                     },
                     {
-                      "text" : "following the path to that leaf node from the root node.For example, if you write a switch statement that has three cases,",
+                      "text" : "following the path to that leaf node from the root node.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "For example, if you write a switch statement that has three cases,",
                       "type" : "text"
                     },
                     {
@@ -8868,8 +8889,8 @@
               "overridingTitle" : "Sendable",
               "overridingTitleInlineContent" : [
                 {
-                  "text" : "Sendable",
-                  "type" : "text"
+                  "code" : "Sendable",
+                  "type" : "codeVoice"
                 }
               ],
               "type" : "reference"
@@ -9688,11 +9709,11 @@
 },
 "https://developer.apple.com/documentation/foundation/1395135-nsclassfromstring": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/foundation\/1395135-nsclassfromstring",
-  "title" : "NSClassFromString",
+  "title" : "NSClassFromString(_:)",
   "titleInlineContent" : [
     {
-      "text" : "NSClassFromString",
-      "type" : "text"
+      "code" : "NSClassFromString(_:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9700,24 +9721,11 @@
 },
 "https://developer.apple.com/documentation/swift/1538339-min/": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/1538339-min\/",
-  "title" : "min(::)",
+  "title" : "min(_:_:)",
   "titleInlineContent" : [
     {
-      "text" : "min(",
-      "type" : "text"
-    },
-    {
-      "inlineContent" : [
-        {
-          "text" : ":",
-          "type" : "text"
-        }
-      ],
-      "type" : "emphasis"
-    },
-    {
-      "text" : ":)",
-      "type" : "text"
+      "code" : "min(_:_:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9728,8 +9736,8 @@
   "title" : "ExpressibleByArrayLiteral",
   "titleInlineContent" : [
     {
-      "text" : "ExpressibleByArrayLiteral",
-      "type" : "text"
+      "code" : "ExpressibleByArrayLiteral",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9740,8 +9748,8 @@
   "title" : "ExpressibleByDictionaryLiteral",
   "titleInlineContent" : [
     {
-      "text" : "ExpressibleByDictionaryLiteral",
-      "type" : "text"
+      "code" : "ExpressibleByDictionaryLiteral",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9752,8 +9760,8 @@
   "title" : "Key",
   "titleInlineContent" : [
     {
-      "text" : "Key",
-      "type" : "text"
+      "code" : "Key",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9764,8 +9772,8 @@
   "title" : "ExpressibleByStringLiteral",
   "titleInlineContent" : [
     {
-      "text" : "ExpressibleByStringLiteral",
-      "type" : "text"
+      "code" : "ExpressibleByStringLiteral",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9788,8 +9796,8 @@
   "title" : "KeyPath",
   "titleInlineContent" : [
     {
-      "text" : "KeyPath",
-      "type" : "text"
+      "code" : "KeyPath",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9800,8 +9808,8 @@
   "title" : "KeyValuePairs",
   "titleInlineContent" : [
     {
-      "text" : "KeyValuePairs",
-      "type" : "text"
+      "code" : "KeyValuePairs",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9812,8 +9820,8 @@
   "title" : "ReferenceWritableKeyPath",
   "titleInlineContent" : [
     {
-      "text" : "ReferenceWritableKeyPath",
-      "type" : "text"
+      "code" : "ReferenceWritableKeyPath",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9824,8 +9832,8 @@
   "title" : "Sendable",
   "titleInlineContent" : [
     {
-      "text" : "Sendable",
-      "type" : "text"
+      "code" : "Sendable",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9836,8 +9844,8 @@
   "title" : "min()",
   "titleInlineContent" : [
     {
-      "text" : "min()",
-      "type" : "text"
+      "code" : "min()",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9848,8 +9856,8 @@
   "title" : "WritableKeyPath",
   "titleInlineContent" : [
     {
-      "text" : "WritableKeyPath",
-      "type" : "text"
+      "code" : "WritableKeyPath",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9857,37 +9865,11 @@
 },
 "https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/uikit\/1622933-uiapplicationmain",
-  "title" : "UIApplicationMain(::::)",
+  "title" : "UIApplicationMain(_:_:_:_:)",
   "titleInlineContent" : [
     {
-      "text" : "UIApplicationMain(",
-      "type" : "text"
-    },
-    {
-      "inlineContent" : [
-        {
-          "text" : ":",
-          "type" : "text"
-        }
-      ],
-      "type" : "emphasis"
-    },
-    {
-      "text" : ":",
-      "type" : "text"
-    },
-    {
-      "inlineContent" : [
-        {
-          "text" : ":",
-          "type" : "text"
-        }
-      ],
-      "type" : "emphasis"
-    },
-    {
-      "text" : ":)",
-      "type" : "text"
+      "code" : "UIApplicationMain(_:_:_:_:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",

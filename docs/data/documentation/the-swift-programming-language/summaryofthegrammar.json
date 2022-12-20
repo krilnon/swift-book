@@ -1,4 +1,10 @@
 {
+  "abstract" : [
+    {
+      "text" : "Read the whole formal grammar.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -23,9 +29,9 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
+          "anchor" : "Lexical-Structure",
           "level" : 2,
-          "text" : "Overview",
+          "text" : "Lexical Structure",
           "type" : "heading"
         },
         {
@@ -5629,6 +5635,12 @@
           "type" : "aside"
         },
         {
+          "anchor" : "Types",
+          "level" : 2,
+          "text" : "Types",
+          "type" : "heading"
+        },
+        {
           "content" : [
             {
               "inlineContent" : [
@@ -7781,6 +7793,12 @@
           "name" : "Grammar of a type inheritance clause",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "anchor" : "Expressions",
+          "level" : 2,
+          "text" : "Expressions",
+          "type" : "heading"
         },
         {
           "content" : [
@@ -14439,6 +14457,12 @@
           "type" : "aside"
         },
         {
+          "anchor" : "Statements",
+          "level" : 2,
+          "text" : "Statements",
+          "type" : "heading"
+        },
+        {
           "content" : [
             {
               "inlineContent" : [
@@ -20582,6 +20606,12 @@
           "name" : "Grammar of an availability condition",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "anchor" : "Declarations",
+          "level" : 2,
+          "text" : "Declarations",
+          "type" : "heading"
         },
         {
           "content" : [
@@ -31269,6 +31299,12 @@
           "type" : "aside"
         },
         {
+          "anchor" : "Attributes",
+          "level" : 2,
+          "text" : "Attributes",
+          "type" : "heading"
+        },
+        {
           "content" : [
             {
               "inlineContent" : [
@@ -31828,6 +31864,12 @@
           "name" : "Grammar of an attribute",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "anchor" : "Patterns",
+          "level" : 2,
+          "text" : "Patterns",
+          "type" : "heading"
         },
         {
           "content" : [
@@ -32852,6 +32894,12 @@
           "name" : "Grammar of an expression pattern",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "anchor" : "Generic-Parameters-and-Arguments",
+          "level" : 2,
+          "text" : "Generic Parameters and Arguments",
+          "type" : "heading"
         },
         {
           "content" : [

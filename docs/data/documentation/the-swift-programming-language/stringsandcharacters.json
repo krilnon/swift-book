@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "A ",
@@ -367,7 +361,16 @@
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : " without casting.For more information about using ",
+                  "text" : " without casting.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "For more information about using ",
                   "type" : "text"
                 },
                 {
@@ -3862,7 +3865,16 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "in order to determine the characters for that string.The count of the characters returned by the ",
+                  "text" : "in order to determine the characters for that string.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The count of the characters returned by the ",
                   "type" : "text"
                 },
                 {
@@ -7614,8 +7626,8 @@
   "title" : "StringProtocol",
   "titleInlineContent" : [
     {
-      "text" : "StringProtocol",
-      "type" : "text"
+      "code" : "StringProtocol",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -7626,8 +7638,8 @@
   "title" : "Substring",
   "titleInlineContent" : [
     {
-      "text" : "Substring",
-      "type" : "text"
+      "code" : "Substring",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",

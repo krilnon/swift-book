@@ -37,7 +37,7 @@
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Compatibility",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/GuidedTour"
       ],
-      "title" : "Guided Tour"
+      "title" : "Welcome to Swift"
     },
     {
       "identifiers" : [
@@ -653,7 +653,10 @@
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/SummaryOfTheGrammar": {
   "abstract" : [
-
+    {
+      "text" : "Read the whole formal grammar.",
+      "type" : "text"
+    }
   ],
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/SummaryOfTheGrammar",
   "kind" : "article",

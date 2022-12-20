@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "In Swift, there are two kinds of types: named types and compound types.",
@@ -131,7 +125,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Data types that are normally considered basic or primitive in other languages—",
+              "text" : "Data types that are normally considered basic or primitive in other languages —",
               "type" : "text"
             },
             {
@@ -139,7 +133,7 @@
               "type" : "text"
             },
             {
-              "text" : "such as types that represent numbers, characters, and strings—",
+              "text" : "such as types that represent numbers, characters, and strings —",
               "type" : "text"
             },
             {
@@ -6976,8 +6970,8 @@
               "overridingTitle" : "type(of:)",
               "overridingTitleInlineContent" : [
                 {
-                  "text" : "type(of:)",
-                  "type" : "text"
+                  "code" : "type(of:)",
+                  "type" : "codeVoice"
                 }
               ],
               "type" : "reference"
@@ -7679,7 +7673,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "In Swift, type information can also flow in the opposite direction—from the root down to the leaves.",
+              "text" : "In Swift, type information can also flow in the opposite direction — from the root down to the leaves.",
               "type" : "text"
             },
             {
@@ -8024,8 +8018,8 @@
   "title" : "type(of:)",
   "titleInlineContent" : [
     {
-      "text" : "type(of:)",
-      "type" : "text"
+      "code" : "type(of:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -8036,8 +8030,8 @@
   "title" : "AnyObject",
   "titleInlineContent" : [
     {
-      "text" : "AnyObject",
-      "type" : "text"
+      "code" : "AnyObject",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",

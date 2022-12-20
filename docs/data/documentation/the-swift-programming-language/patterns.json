@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "A ",
@@ -2317,7 +2311,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " pattern—or a subclass of that type.",
+              "text" : " pattern — or a subclass of that type.",
               "type" : "text"
             },
             {
@@ -2382,7 +2376,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " pattern—or a subclass of that type.",
+              "text" : " pattern — or a subclass of that type.",
               "type" : "text"
             },
             {

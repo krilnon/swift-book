@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "inlineContent" : [
@@ -2235,7 +2229,7 @@
               ]
             }
           ],
-          "type" : "unorderedList"
+          "type" : "orderedList"
         },
         {
           "inlineContent" : [

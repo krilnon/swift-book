@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "The ",
@@ -1214,15 +1208,15 @@
               "type" : "text"
             },
             {
-              "text" : "but `",
+              "text" : "but ",
               "type" : "text"
             },
             {
-              "code" : "class",
+              "code" : "`class`",
               "type" : "codeVoice"
             },
             {
-              "text" : "` is valid.",
+              "text" : " is valid.",
               "type" : "text"
             },
             {
@@ -1238,15 +1232,11 @@
               "type" : "text"
             },
             {
-              "text" : "`",
-              "type" : "text"
-            },
-            {
-              "code" : "x",
+              "code" : "`x`",
               "type" : "codeVoice"
             },
             {
-              "text" : "` and ",
+              "text" : " and ",
               "type" : "text"
             },
             {
@@ -3857,19 +3847,31 @@
               "type" : "text"
             },
             {
-              "code" : "\\\\``, ",
+              "code" : "`",
               "type" : "codeVoice"
             },
             {
-              "text" : "?",
+              "text" : ",",
               "type" : "text"
             },
             {
-              "code" : ", and ",
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "?",
               "type" : "codeVoice"
             },
             {
-              "text" : "!` (as a postfix operator).",
+              "text" : ", and ",
+              "type" : "text"
+            },
+            {
+              "code" : "!",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " (as a postfix operator).",
               "type" : "text"
             }
           ],
@@ -12310,8 +12312,8 @@
   "title" : "String",
   "titleInlineContent" : [
     {
-      "text" : "String",
-      "type" : "text"
+      "code" : "String",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",

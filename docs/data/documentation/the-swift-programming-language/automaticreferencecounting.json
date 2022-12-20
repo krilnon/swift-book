@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "Swift uses ",
@@ -2940,7 +2934,16 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " refers to an instance that hasn’t been deallocated.If you try to access the value of an unowned reference",
+                  "text" : " refers to an instance that hasn’t been deallocated.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "If you try to access the value of an unowned reference",
                   "type" : "text"
                 },
                 {
@@ -3849,7 +3852,16 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "you take on the responsibility for checking that code for safety.You indicate an unsafe unowned reference by writing ",
+                  "text" : "you take on the responsibility for checking that code for safety.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "You indicate an unsafe unowned reference by writing ",
                   "type" : "text"
                 },
                 {
@@ -4383,7 +4395,16 @@
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : ".The optional that wraps the class",
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The optional that wraps the class",
                   "type" : "text"
                 },
                 {

@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "inlineContent" : [
@@ -4128,7 +4122,16 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "and if the value isn’t mutated after the closure is created.Swift also handles all memory management involved in disposing of",
+                  "text" : "and if the value isn’t mutated after the closure is created.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Swift also handles all memory management involved in disposing of",
                   "type" : "text"
                 },
                 {

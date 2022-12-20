@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "By default, Swift prevents unsafe behavior from happening in your code.",
@@ -601,7 +595,16 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " involve concurrent or multithreaded code.If you have conflicting access to memory",
+                  "text" : " involve concurrent or multithreaded code.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "If you have conflicting access to memory",
                   "type" : "text"
                 },
                 {

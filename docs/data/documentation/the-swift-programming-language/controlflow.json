@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "Swift provides a variety of control flow statements.",
@@ -8419,7 +8413,16 @@
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : " label makes it clear which control statement should be terminated.It isn’t strictly necessary to use the ",
+                  "text" : " label makes it clear which control statement should be terminated.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "It isn’t strictly necessary to use the ",
                   "type" : "text"
                 },
                 {
@@ -8451,7 +8454,7 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "there’s only one loop in the game,",
+                  "text" : "There’s only one loop in the game,",
                   "type" : "text"
                 },
                 {
@@ -9679,8 +9682,8 @@
   "title" : "Sequence",
   "titleInlineContent" : [
     {
-      "text" : "Sequence",
-      "type" : "text"
+      "code" : "Sequence",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",

@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "Swift provides three primary ",
@@ -407,7 +401,16 @@
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : " class.For more information about using ",
+                  "text" : " class.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "For more information about using ",
                   "type" : "text"
                 },
                 {
@@ -2201,7 +2204,16 @@
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : " class.For more information about using ",
+                  "text" : " class.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "For more information about using ",
                   "type" : "text"
                 },
                 {
@@ -3477,7 +3489,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The illustration below depicts two sets—",
+              "text" : "The illustration below depicts two sets — ",
               "type" : "text"
             },
             {
@@ -3493,7 +3505,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : "—",
+              "text" : " —",
               "type" : "text"
             },
             {
@@ -3632,7 +3644,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The illustration below depicts three sets—",
+              "text" : "The illustration below depicts three sets — ",
               "type" : "text"
             },
             {
@@ -3656,7 +3668,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : "—",
+              "text" : " —",
               "type" : "text"
             },
             {
@@ -4106,7 +4118,16 @@
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : " class.For more information about using ",
+                  "text" : " class.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "For more information about using ",
                   "type" : "text"
                 },
                 {
@@ -5894,8 +5915,8 @@
   "title" : "Hashable",
   "titleInlineContent" : [
     {
-      "text" : "Hashable",
-      "type" : "text"
+      "code" : "Hashable",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",

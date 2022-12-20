@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "In Swift, there are four kinds of expressions:",
@@ -17794,8 +17788,8 @@
   "title" : "KeyPath",
   "titleInlineContent" : [
     {
-      "text" : "KeyPath",
-      "type" : "text"
+      "code" : "KeyPath",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",

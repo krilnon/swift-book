@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "A ",
@@ -8023,7 +8017,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " protocols can be adopted only by classes",
+              "text" : " protocols can be adopted only by classes,",
               "type" : "text"
             },
             {
@@ -8031,23 +8025,7 @@
               "type" : "text"
             },
             {
-              "text" : "that inherit from Objective-C classes or other ",
-              "type" : "text"
-            },
-            {
-              "code" : "@objc",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " classes.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "They can’t be adopted by structures or enumerations.",
+              "text" : "not by structures or enumerations.",
               "type" : "text"
             }
           ],

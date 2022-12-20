@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "Swift is a programming language for iOS, macOS, watchOS, and tvOS app development.",
@@ -9541,7 +9535,16 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "regardless of optimization settings.You can use the ",
+                  "text" : "regardless of optimization settings.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "You can use the ",
                   "type" : "text"
                 },
                 {
@@ -9830,8 +9833,8 @@
   "title" : "preconditionFailure(_:file:line:)",
   "titleInlineContent" : [
     {
-      "text" : "preconditionFailure(_:file:line:)",
-      "type" : "text"
+      "code" : "preconditionFailure(_:file:line:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9842,8 +9845,8 @@
   "title" : "assertionFailure(_:file:line:)",
   "titleInlineContent" : [
     {
-      "text" : "assertionFailure(_:file:line:)",
-      "type" : "text"
+      "code" : "assertionFailure(_:file:line:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9851,24 +9854,11 @@
 },
 "https://developer.apple.com/documentation/swift/1540960-precondition": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/1540960-precondition",
-  "title" : "precondition(::file:line:)",
+  "title" : "precondition(_:_:file:line:)",
   "titleInlineContent" : [
     {
-      "text" : "precondition(",
-      "type" : "text"
-    },
-    {
-      "inlineContent" : [
-        {
-          "text" : ":",
-          "type" : "text"
-        }
-      ],
-      "type" : "emphasis"
-    },
-    {
-      "text" : ":file:line:)",
-      "type" : "text"
+      "code" : "precondition(_:_:file:line:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
@@ -9876,24 +9866,11 @@
 },
 "https://developer.apple.com/documentation/swift/1541112-assert": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/1541112-assert",
-  "title" : "assert(::file:line:)",
+  "title" : "assert(_:_:file:line:)",
   "titleInlineContent" : [
     {
-      "text" : "assert(",
-      "type" : "text"
-    },
-    {
-      "inlineContent" : [
-        {
-          "text" : ":",
-          "type" : "text"
-        }
-      ],
-      "type" : "emphasis"
-    },
-    {
-      "text" : ":file:line:)",
-      "type" : "text"
+      "code" : "assert(_:_:file:line:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",

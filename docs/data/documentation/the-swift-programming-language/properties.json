@@ -29,12 +29,6 @@
     {
       "content" : [
         {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
           "inlineContent" : [
             {
               "inlineContent" : [
@@ -2806,7 +2800,16 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "before the superclass initializer has been called.For more information about initializer delegation,",
+                  "text" : "before the superclass initializer has been called.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "For more information about initializer delegation,",
                   "type" : "text"
                 },
                 {
@@ -5876,7 +5879,16 @@
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : " modifier.Local constants and variables are never computed lazily.",
+                  "text" : " modifier.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Local constants and variables are never computed lazily.",
                   "type" : "text"
                 }
               ],
@@ -6205,7 +6217,16 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "that can assign a value to a stored type property at initialization time.Stored type properties are lazily initialized on their first access.",
+                  "text" : "that can assign a value to a stored type property at initialization time.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Stored type properties are lazily initialized on their first access.",
                   "type" : "text"
                 },
                 {
