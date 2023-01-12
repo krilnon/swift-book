@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Define one data type inside of another data type.",
+      "text" : "Define types inside the scope of another type.",
       "type" : "text"
     }
   ],

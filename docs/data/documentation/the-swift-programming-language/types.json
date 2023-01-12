@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Use built-in nominal and structural types.",
+      "text" : "Use built-in named and compound types.",
       "type" : "text"
     }
   ],

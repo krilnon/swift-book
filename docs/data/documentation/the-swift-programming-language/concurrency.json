@@ -2801,7 +2801,7 @@
             "    }",
             "}"
           ],
-          "syntax" : "markdown",
+          "syntax" : "swift",
           "type" : "codeListing"
         },
         {
@@ -3009,7 +3009,7 @@
             "}",
             "let result = await handle.value"
           ],
-          "syntax" : "markdown",
+          "syntax" : "swift",
           "type" : "codeListing"
         },
         {
@@ -3532,7 +3532,7 @@
             "print(await logger.max)",
             "\/\/ Prints \"25\""
           ],
-          "syntax" : "markdown",
+          "syntax" : "swift",
           "type" : "codeListing"
         },
         {
@@ -3648,7 +3648,7 @@
             "    }",
             "}"
           ],
-          "syntax" : "markdown",
+          "syntax" : "swift",
           "type" : "codeListing"
         },
         {
@@ -4034,7 +4034,7 @@
           "code" : [
             "print(logger.max)  \/\/ Error"
           ],
-          "syntax" : "markdown",
+          "syntax" : "swift",
           "type" : "codeListing"
         },
         {

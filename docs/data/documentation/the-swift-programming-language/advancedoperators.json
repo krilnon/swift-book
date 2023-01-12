@@ -7310,7 +7310,7 @@
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/BasicOperators": {
   "abstract" : [
     {
-      "text" : "Perform assignment, arithmetic, comparison, and Boolean operations.",
+      "text" : "Perform operations like assignment, arithmetic, and comparison.",
       "type" : "text"
     }
   ],

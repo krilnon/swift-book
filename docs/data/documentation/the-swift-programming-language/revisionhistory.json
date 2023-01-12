@@ -13057,7 +13057,7 @@
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Statements": {
   "abstract" : [
     {
-      "text" : "Structure groups of expressions and control their behavior.",
+      "text" : "Group expressions and control the flow of execution.",
       "type" : "text"
     }
   ],
@@ -13419,7 +13419,7 @@
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Types": {
   "abstract" : [
     {
-      "text" : "Use built-in nominal and structural types.",
+      "text" : "Use built-in named and compound types.",
       "type" : "text"
     }
   ],

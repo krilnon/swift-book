@@ -717,7 +717,8 @@
         {
           "code" : [
             "fruits.append(\"blueberries\")",
-            "print(fruits)"
+            "print(fruits)",
+            "\/\/ Prints \"[\"strawberries\", \"grapes\", \"tangerines\", \"blueberries\"]\""
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -1297,7 +1298,8 @@
           "code" : [
             "if let nickname {",
             "    print(\"Hey, \\(nickname)\")",
-            "}"
+            "}",
+            "\/\/ Doesn't print anything, because nickname is nil."
           ],
           "syntax" : "swift",
           "type" : "codeListing"

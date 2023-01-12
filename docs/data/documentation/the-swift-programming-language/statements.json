@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Structure groups of expressions and control their behavior.",
+      "text" : "Group expressions and control the flow of execution.",
       "type" : "text"
     }
   ],
