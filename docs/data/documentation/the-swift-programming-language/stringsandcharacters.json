@@ -8,7 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/org.swift.tspl\/documentation\/TSPL"
+        "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language"
       ]
     ]
   },
@@ -18,11 +18,6 @@
   },
   "kind" : "article",
   "metadata" : {
-    "modules" : [
-      {
-        "name" : "The Swift Programming Language"
-      }
-    ],
     "title" : "Strings and Characters"
   },
   "primaryContentSections" : [
@@ -1457,7 +1452,7 @@
               "type" : "text"
             },
             {
-              "text" : "either assign an empty string literal to a variable,",
+              "text" : "either assign an empty string literal to a variable",
               "type" : "text"
             },
             {
@@ -7460,18 +7455,6 @@
   },
   "sections" : [
 
-  ],
-  "variants" : [
-    {
-      "paths" : [
-        "\/documentation\/the-swift-programming-language\/stringsandcharacters"
-      ],
-      "traits" : [
-        {
-          "interfaceLanguage" : "swift"
-        }
-      ]
-    }
   ]
 , 
 "references": {
@@ -7538,16 +7521,16 @@
     }
   ]
 },
-"doc://org.swift.tspl/documentation/TSPL": {
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/TSPL",
-  "kind" : "symbol",
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
+  "kind" : "article",
   "role" : "collection",
   "title" : "The Swift Programming Language",
   "type" : "topic",
-  "url" : "\/documentation\/tspl"
+  "url" : "\/documentation\/the-swift-programming-language"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/BasicOperators#Comparison-Operators": {
   "abstract" : [

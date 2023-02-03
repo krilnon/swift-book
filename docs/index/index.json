@@ -230,9 +230,9 @@
             "type" : "article"
           }
         ],
-        "path" : "\/documentation\/tspl",
+        "path" : "\/documentation\/the-swift-programming-language",
         "title" : "The Swift Programming Language",
-        "type" : "module"
+        "type" : "article"
       }
     ]
   },

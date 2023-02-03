@@ -8,18 +8,10 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/org.swift.tspl\/documentation\/TSPL"
+    "url" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language"
   },
-  "kind" : "symbol",
+  "kind" : "article",
   "metadata" : {
-    "externalID" : "TSPL",
-    "modules" : [
-      {
-        "name" : "The Swift Programming Language"
-      }
-    ],
-    "role" : "collection",
-    "symbolKind" : "module",
     "title" : "The Swift Programming Language"
   },
   "schemaVersion" : {
@@ -93,32 +85,9 @@
       ],
       "title" : "Revision History"
     }
-  ],
-  "variants" : [
-    {
-      "paths" : [
-        "\/documentation\/tspl"
-      ],
-      "traits" : [
-        {
-          "interfaceLanguage" : "swift"
-        }
-      ]
-    }
   ]
 , 
 "references": {
-"doc://org.swift.tspl/documentation/TSPL": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/TSPL",
-  "kind" : "symbol",
-  "role" : "collection",
-  "title" : "The Swift Programming Language",
-  "type" : "topic",
-  "url" : "\/documentation\/tspl"
-},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/AboutSwift": {
   "abstract" : [
     {

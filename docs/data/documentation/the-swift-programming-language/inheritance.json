@@ -8,7 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/org.swift.tspl\/documentation\/TSPL"
+        "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language"
       ]
     ]
   },
@@ -18,11 +18,6 @@
   },
   "kind" : "article",
   "metadata" : {
-    "modules" : [
-      {
-        "name" : "The Swift Programming Language"
-      }
-    ],
     "title" : "Inheritance"
   },
   "primaryContentSections" : [
@@ -2683,31 +2678,19 @@
   },
   "sections" : [
 
-  ],
-  "variants" : [
-    {
-      "paths" : [
-        "\/documentation\/the-swift-programming-language\/inheritance"
-      ],
-      "traits" : [
-        {
-          "interfaceLanguage" : "swift"
-        }
-      ]
-    }
   ]
 , 
 "references": {
-"doc://org.swift.tspl/documentation/TSPL": {
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/TSPL",
-  "kind" : "symbol",
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
+  "kind" : "article",
   "role" : "collection",
   "title" : "The Swift Programming Language",
   "type" : "topic",
-  "url" : "\/documentation\/tspl"
+  "url" : "\/documentation\/the-swift-programming-language"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Properties#Property-Observers": {
   "abstract" : [
