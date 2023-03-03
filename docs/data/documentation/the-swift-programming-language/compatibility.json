@@ -26,7 +26,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "This book describes Swift 5.7,",
+              "text" : "This book describes Swift 5.8,",
               "type" : "text"
             },
             {
@@ -50,7 +50,7 @@
               "type" : "text"
             },
             {
-              "text" : "that are written in either Swift 5.7, Swift 4.2, or Swift 4.",
+              "text" : "that are written in either Swift 5.8, Swift 4.2, or Swift 4.",
               "type" : "text"
             }
           ],
@@ -67,7 +67,7 @@
               "type" : "text"
             },
             {
-              "text" : "most Swift 5.7 functionality is available.",
+              "text" : "most Swift 5.8 functionality is available.",
               "type" : "text"
             },
             {
@@ -83,7 +83,7 @@
               "type" : "text"
             },
             {
-              "text" : "the following changes are available only to code that uses Swift 5.7 or later:",
+              "text" : "the following changes are available only to code that uses Swift 5.8 or later:",
               "type" : "text"
             }
           ],
@@ -184,7 +184,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Concurrency requires Swift 5.7 or later,",
+              "text" : "Concurrency requires Swift 5.8 or later,",
               "type" : "text"
             },
             {
@@ -225,7 +225,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "A target written in Swift 5.7 can depend on",
+              "text" : "A target written in Swift 5.8 can depend on",
               "type" : "text"
             },
             {
@@ -265,7 +265,7 @@
               "type" : "text"
             },
             {
-              "text" : "you can migrate your code from Swift 4 to Swift 5.7",
+              "text" : "you can migrate your code from Swift 4 to Swift 5.8",
               "type" : "text"
             },
             {

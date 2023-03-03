@@ -8738,8 +8738,9 @@
               "type" : "text"
             },
             {
-              "code" : "Never",
-              "type" : "codeVoice"
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/never",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " type,",
@@ -15097,7 +15098,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Properties of a actor instance can be accessed using dot (",
+              "text" : "Properties of an actor instance can be accessed using dot (",
               "type" : "text"
             },
             {
@@ -15173,7 +15174,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "You can extend the behavior of a structure type with an extension declaration,",
+              "text" : "You can extend the behavior of an actor type with an extension declaration,",
               "type" : "text"
             },
             {
@@ -25625,7 +25626,16 @@
                         "type" : "codeVoice"
                       },
                       {
-                        "text" : " modifier, access to that member is always dynamically dispatched using the Objective-C runtime. Access to that member is never inlined or devirtualized by the compiler.Because declarations marked with the ",
+                        "text" : " modifier, access to that member is always dynamically dispatched using the Objective-C runtime. Access to that member is never inlined or devirtualized by the compiler.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  },
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Because declarations marked with the ",
                         "type" : "text"
                       },
                       {
@@ -25633,7 +25643,19 @@
                         "type" : "codeVoice"
                       },
                       {
-                        "text" : " modifier are dispatched using the Objective-C runtime, they must be marked with the ",
+                        "text" : " modifier are dispatched",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : " ",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : "using the Objective-C runtime, they must be marked with the",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : " ",
                         "type" : "text"
                       },
                       {
@@ -25744,7 +25766,16 @@
                   {
                     "inlineContent" : [
                       {
-                        "text" : "Apply this modifier to a protocol’s property, method, or subscript members to indicate that a conforming type isn’t required to implement those members.You can apply the ",
+                        "text" : "Apply this modifier to a protocol’s property, method, or subscript members to indicate that a conforming type isn’t required to implement those members.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  },
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "You can apply the ",
                         "type" : "text"
                       },
                       {
@@ -25752,7 +25783,15 @@
                         "type" : "codeVoice"
                       },
                       {
-                        "text" : " modifier only to protocols that are marked with the ",
+                        "text" : " modifier only to protocols that are marked",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : " ",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : "with the ",
                         "type" : "text"
                       },
                       {
@@ -25760,7 +25799,23 @@
                         "type" : "codeVoice"
                       },
                       {
-                        "text" : " attribute. As a result, only class types can adopt and conform to a protocol that contains optional member requirements. For more information about how to use the ",
+                        "text" : " attribute. As a result, only class types can adopt and conform",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : " ",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : "to a protocol that contains optional member requirements.",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : " ",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : "For more information about how to use the ",
                         "type" : "text"
                       },
                       {
@@ -25768,7 +25823,31 @@
                         "type" : "codeVoice"
                       },
                       {
-                        "text" : " modifier and for guidance about how to access optional protocol members — for example, when you’re not sure whether a conforming type implements them — see ",
+                        "text" : " modifier",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : " ",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : "and for guidance about how to access optional protocol members —",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : " ",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : "for example, when you’re not sure whether a conforming type implements them —",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : " ",
+                        "type" : "text"
+                      },
+                      {
+                        "text" : "see ",
                         "type" : "text"
                       },
                       {
@@ -28032,6 +28111,18 @@
   "title" : "Type Inference",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/types#Type-Inference"
+},
+"https://developer.apple.com/documentation/swift/never": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/never",
+  "title" : "Never",
+  "titleInlineContent" : [
+    {
+      "code" : "Never",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/never"
 },
 "https://developer.apple.com/documentation/swift/operator_declarations": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/operator_declarations",
