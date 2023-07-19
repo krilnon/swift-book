@@ -12,7 +12,7 @@
   },
   "kind" : "article",
   "metadata" : {
-    "title" : "The Swift Programming Language"
+    "title" : "The Swift Programming Language (5.9 beta)"
   },
   "schemaVersion" : {
     "major" : 0,
@@ -51,6 +51,7 @@
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OptionalChaining",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Concurrency",
+        "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TypeCasting",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/NestedTypes",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Extensions",
@@ -452,6 +453,20 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/lexicalstructure"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Macros": {
+  "abstract" : [
+    {
+      "text" : "Use macros to generate code at compile time.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Macros",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/macros"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/MemorySafety": {
   "abstract" : [
     {
@@ -504,7 +519,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes",
   "kind" : "article",
   "role" : "article",
-  "title" : "Opaque Types",
+  "title" : "Opaque and Boxed Types",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/opaquetypes"
 },

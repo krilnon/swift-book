@@ -3110,30 +3110,6 @@
                       "type" : "text"
                     },
                     {
-                      "code" : "#column",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#dsohandle",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
                       "code" : "#elseif",
                       "type" : "codeVoice"
                     },
@@ -3170,67 +3146,7 @@
                       "type" : "text"
                     },
                     {
-                      "code" : "#error",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#fileID",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
                       "code" : "#fileLiteral",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#filePath",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#file",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#function",
                       "type" : "codeVoice"
                     },
                     {
@@ -3278,18 +3194,6 @@
                       "type" : "text"
                     },
                     {
-                      "code" : "#line",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
                       "code" : "#selector",
                       "type" : "codeVoice"
                     },
@@ -3306,22 +3210,6 @@
                       "type" : "codeVoice"
                     },
                     {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "and ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#warning",
-                      "type" : "codeVoice"
-                    },
-                    {
                       "text" : ".",
                       "type" : "text"
                     }
@@ -3332,6 +3220,279 @@
             }
           ],
           "type" : "unorderedList"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "Prior to Swift 5.9,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "the following keywords were reserved:",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#column",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#dsohandle",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#error",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#fileID",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#filePath",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#file",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#function",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#line",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "and ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#warning",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "These are now implemented as macros in the Swift standard library:",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/column",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/dsohandle",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/error(_:)",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/fileID",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/filePath",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/file",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/line",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "and ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Note",
+          "style" : "note",
+          "type" : "aside"
         },
         {
           "items" : [
@@ -7447,7 +7608,7 @@
                       "type" : "text"
                     },
                     {
-                      "code" : "\\\\u{",
+                      "code" : "\\u{",
                       "type" : "codeVoice"
                     },
                     {
@@ -12138,6 +12299,49 @@
           "name" : "Grammar of operators",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -12160,7 +12364,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -12290,6 +12494,102 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/thebasics#Integers"
 },
+"https://developer.apple.com/documentation/swift/column": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/column",
+  "title" : "column",
+  "titleInlineContent" : [
+    {
+      "code" : "column",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/column"
+},
+"https://developer.apple.com/documentation/swift/dsohandle": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/dsohandle",
+  "title" : "dsohandle",
+  "titleInlineContent" : [
+    {
+      "code" : "dsohandle",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/dsohandle"
+},
+"https://developer.apple.com/documentation/swift/error(_:)": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/error(_:)",
+  "title" : "error(_:)",
+  "titleInlineContent" : [
+    {
+      "code" : "error(_:)",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/error(_:)"
+},
+"https://developer.apple.com/documentation/swift/file": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/file",
+  "title" : "file",
+  "titleInlineContent" : [
+    {
+      "code" : "file",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/file"
+},
+"https://developer.apple.com/documentation/swift/fileID": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/fileID",
+  "title" : "fileID",
+  "titleInlineContent" : [
+    {
+      "code" : "fileID",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/fileID"
+},
+"https://developer.apple.com/documentation/swift/filePath": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/filePath",
+  "title" : "filePath",
+  "titleInlineContent" : [
+    {
+      "code" : "filePath",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/filePath"
+},
+"https://developer.apple.com/documentation/swift/function": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function",
+  "title" : "function",
+  "titleInlineContent" : [
+    {
+      "code" : "function",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/function"
+},
+"https://developer.apple.com/documentation/swift/line": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/line",
+  "title" : "line",
+  "titleInlineContent" : [
+    {
+      "code" : "line",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/line"
+},
 "https://developer.apple.com/documentation/swift/string": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/string",
   "title" : "String",
@@ -12302,6 +12602,18 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/string"
 },
+"https://developer.apple.com/documentation/swift/warning(_:)": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)",
+  "title" : "warning(_:)",
+  "titleInlineContent" : [
+    {
+      "code" : "warning(_:)",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)"
+},
 "https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html": {
   "identifier" : "https:\/\/developer.apple.com\/library\/content\/documentation\/Xcode\/Reference\/xcode_markup_formatting_ref\/index.html",
   "title" : "Markup Formatting Reference",
@@ -12313,6 +12625,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/library\/content\/documentation\/Xcode\/Reference\/xcode_markup_formatting_ref\/index.html"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

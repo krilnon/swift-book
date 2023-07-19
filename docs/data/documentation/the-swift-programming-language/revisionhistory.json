@@ -28,7 +28,212 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "2023-02-16",
+                  "text" : "2023-06-05",
+                  "type" : "text"
+                }
+              ],
+              "type" : "strong"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Updated for Swift 5.9.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added information about ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "if",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " and ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "switch",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " expressions",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " chapter",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Expressions#Conditional-Expression",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " chapter,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "with information about generating code at compile time.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added information about boxed protocol types",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " chapter.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Updated the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#Result-Building-Methods",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "with information about the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "buildPartialBlock(first:)",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "buildPartialBlock(accumulated:next:)",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " methods.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "2023-03-30",
                   "type" : "text"
                 }
               ],
@@ -45,6 +250,44 @@
                   "inlineContent" : [
                     {
                       "text" : "Updated for Swift 5.8.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Deferred-Actions",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "showing ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "defer",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " outside of error handling.",
                       "type" : "text"
                     }
                   ],
@@ -11441,6 +11684,49 @@
             }
           ],
           "type" : "unorderedList"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -11463,7 +11749,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -11628,6 +11914,16 @@
   "title" : "Declaration Attributes",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/attributes#Declaration-Attributes"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#Result-Building-Methods": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#Result-Building-Methods",
+  "kind" : "section",
+  "title" : "Result-Building Methods",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/attributes#Result-Building-Methods"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#Sendable": {
   "abstract" : [
@@ -11990,6 +12286,16 @@
   "title" : "Checking API Availability",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/controlflow#Checking-API-Availability"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ControlFlow#Deferred-Actions": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Deferred-Actions",
+  "kind" : "section",
+  "title" : "Deferred Actions",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/controlflow#Deferred-Actions"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ControlFlow#Early-Exit": {
   "abstract" : [
@@ -12376,6 +12682,16 @@
   "title" : "Capture Lists",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/expressions#Capture-Lists"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Expressions#Conditional-Expression": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Expressions#Conditional-Expression",
+  "kind" : "section",
+  "title" : "Conditional Expression",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/expressions#Conditional-Expression"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Expressions#Explicit-Member-Expression": {
   "abstract" : [
@@ -12845,6 +13161,20 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/lexicalstructure#String-Literals"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Macros": {
+  "abstract" : [
+    {
+      "text" : "Use macros to generate code at compile time.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Macros",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/macros"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/MemorySafety": {
   "abstract" : [
     {
@@ -12869,7 +13199,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes",
   "kind" : "article",
   "role" : "article",
-  "title" : "Opaque Types",
+  "title" : "Opaque and Boxed Types",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/opaquetypes"
 },
@@ -13520,6 +13850,18 @@
   "title" : "Self Type",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/types#Self-Type"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

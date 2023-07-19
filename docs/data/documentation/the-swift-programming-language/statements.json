@@ -9558,6 +9558,14 @@
                       "type" : "text"
                     },
                     {
+                      "code" : "visionOS",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ", ",
+                      "type" : "text"
+                    },
+                    {
                       "code" : "Linux",
                       "type" : "codeVoice"
                     },
@@ -12488,7 +12496,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "A compile-time diagnostic statement causes the compiler",
+              "text" : "Prior to Swift 5.9,",
               "type" : "text"
             },
             {
@@ -12496,7 +12504,23 @@
               "type" : "text"
             },
             {
-              "text" : "to emit an error or a warning during compilation.",
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "#warning",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "#error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statements emit a diagnostic during compilation.",
               "type" : "text"
             },
             {
@@ -12504,285 +12528,37 @@
               "type" : "text"
             },
             {
-              "text" : "A compile-time diagnostic statement has the following forms:",
+              "text" : "This behavior is now provided by",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/warning(_:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/error(_:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " macros in the Swift standard library.",
               "type" : "text"
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "#error(\"<#error message#>\")",
-            "#warning(\"<#warning message#>\")"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The first form emits the ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "error message",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " as a fatal error",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and terminates the compilation process.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "The second form emits the ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "warning message",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " as a nonfatal warning",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and allows compilation to proceed.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "You write the diagnostic message as a static string literal.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Static string literals can’t use features like",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "string interpolation or concatenation,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "but they can use the multiline string literal syntax.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "diagnostic-statement",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#error",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "(",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "diagnostic-message",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : ")",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "diagnostic-statement",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#warning",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "(",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "diagnostic-message",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : ")",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "diagnostic-message",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "static-string-literal",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Grammar of a compile-time diagnostic statement",
-          "style" : "note",
-          "type" : "aside"
         },
         {
           "anchor" : "Availability-Condition",
@@ -13600,6 +13376,33 @@
                 {
                   "inlineContent" : [
                     {
+                      "text" : "platform-name",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "visionOS",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
                       "text" : "platform-version",
                       "type" : "text"
                     }
@@ -13758,6 +13561,49 @@
           "name" : "Grammar of an availability condition",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -13780,7 +13626,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -13996,6 +13842,30 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/thebasics#Optional-Binding"
 },
+"http://developer.apple.com/documentation/swift/documentation/swift/error(_:)": {
+  "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/error(_:)",
+  "title" : "error(_:)",
+  "titleInlineContent" : [
+    {
+      "code" : "error(_:)",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/error(_:)"
+},
+"http://developer.apple.com/documentation/swift/documentation/swift/warning(_:)": {
+  "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/warning(_:)",
+  "title" : "warning(_:)",
+  "titleInlineContent" : [
+    {
+      "code" : "warning(_:)",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/warning(_:)"
+},
 "https://developer.apple.com/documentation/swift/iteratorprotocol": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/iteratorprotocol",
   "title" : "IteratorProtocol",
@@ -14031,6 +13901,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/sequence"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

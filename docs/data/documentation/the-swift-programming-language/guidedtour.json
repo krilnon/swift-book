@@ -638,9 +638,13 @@
         {
           "code" : [
             "let quotation = \"\"\"",
-            "I said \"I have \\(apples) apples.\"",
-            "And then I said \"I have \\(apples + oranges) pieces of fruit.\"",
-            "\"\"\""
+            "        Even though there's whitespace to the left,",
+            "        the actual lines aren't indented.",
+            "            Except for this line.",
+            "        Double quotes (\") can appear without being escaped.",
+            "",
+            "        I still have \\(apples + oranges) pieces of fruit.",
+            "        \"\"\""
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -964,6 +968,80 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can write ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " or ",
+              "type" : "text"
+            },
+            {
+              "code" : "switch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "after the equal sign (",
+              "type" : "text"
+            },
+            {
+              "code" : "=",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ") of an assignment",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or after ",
+              "type" : "text"
+            },
+            {
+              "code" : "return",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to choose a value based on the condition.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let scoreDecoration = if teamScore > 10 {",
+            "    \"🎉\"",
+            "} else {",
+            "    \"\"",
+            "}",
+            "print(\"Score:\", teamScore, scoreDecoration)",
+            "\/\/ Prints \"Score: 11 🎉\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
         },
         {
           "inlineContent" : [
@@ -1617,6 +1695,82 @@
           ],
           "syntax" : "swift",
           "type" : "codeListing"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "Change the condition from ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "m < 100",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " to ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "m < 0",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "to see how ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "while",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " and ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "repeat",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : "-",
+                  "type" : "text"
+                },
+                {
+                  "code" : "while",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " behave differently",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "when the loop condition is already true.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Experiment",
+          "style" : "experiment",
+          "type" : "aside"
         },
         {
           "inlineContent" : [
@@ -4522,7 +4676,7 @@
               "type" : "text"
             },
             {
-              "text" : "When you work with values whose type is a protocol type,",
+              "text" : "When you work with values whose type is a boxed protocol type,",
               "type" : "text"
             },
             {
@@ -4538,7 +4692,7 @@
         },
         {
           "code" : [
-            "let protocolValue: ExampleProtocol = a",
+            "let protocolValue: any ExampleProtocol = a",
             "print(protocolValue.simpleDescription)",
             "\/\/ Prints \"A very simple class.  Now 100% adjusted.\"",
             "\/\/ print(protocolValue.anotherProperty)  \/\/ Uncomment to see the error"
@@ -5372,6 +5526,49 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -5394,9 +5591,21 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

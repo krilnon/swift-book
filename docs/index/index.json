@@ -117,6 +117,11 @@
             "type" : "article"
           },
           {
+            "path" : "\/documentation\/the-swift-programming-language\/macros",
+            "title" : "Macros",
+            "type" : "article"
+          },
+          {
             "path" : "\/documentation\/the-swift-programming-language\/typecasting",
             "title" : "Type Casting",
             "type" : "article"
@@ -143,7 +148,7 @@
           },
           {
             "path" : "\/documentation\/the-swift-programming-language\/opaquetypes",
-            "title" : "Opaque Types",
+            "title" : "Opaque and Boxed Types",
             "type" : "article"
           },
           {
@@ -231,7 +236,7 @@
           }
         ],
         "path" : "\/documentation\/the-swift-programming-language",
-        "title" : "The Swift Programming Language",
+        "title" : "The Swift Programming Language (5.9 beta)",
         "type" : "article"
       }
     ]

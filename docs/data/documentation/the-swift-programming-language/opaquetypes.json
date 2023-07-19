@@ -18,7 +18,7 @@
   },
   "kind" : "article",
   "metadata" : {
-    "title" : "Opaque Types"
+    "title" : "Opaque and Boxed Types"
   },
   "primaryContentSections" : [
     {
@@ -26,7 +26,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "A function or method with an opaque return type",
+              "text" : "Swift provides two ways to hide details about a value’s type:",
               "type" : "text"
             },
             {
@@ -34,23 +34,7 @@
               "type" : "text"
             },
             {
-              "text" : "hides its return value’s type information.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Instead of providing a concrete type as the function’s return type,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "the return value is described in terms of the protocols it supports.",
+              "text" : "opaque types and boxed protocol types.",
               "type" : "text"
             },
             {
@@ -84,13 +68,22 @@
             {
               "text" : "because the underlying type of the return value can remain private.",
               "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A function or method that returns an opaque type",
+              "type" : "text"
             },
             {
               "text" : " ",
               "type" : "text"
             },
             {
-              "text" : "Unlike returning a value whose type is a protocol type,",
+              "text" : "hides its return value’s type information.",
               "type" : "text"
             },
             {
@@ -98,7 +91,23 @@
               "type" : "text"
             },
             {
-              "text" : "opaque types preserve type identity —",
+              "text" : "Instead of providing a concrete type as the function’s return type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the return value is described in terms of the protocols it supports.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Opaque types preserve type identity —",
               "type" : "text"
             },
             {
@@ -115,6 +124,47 @@
             },
             {
               "text" : "but clients of the module don’t.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A boxed protocol type can store an instance of any type",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that conforms to the given protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Boxed protocol types don’t preserve type identity —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the value’s specific type isn’t known until runtime,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and it can change over time as different values are stored.",
               "type" : "text"
             }
           ],
@@ -1548,9 +1598,666 @@
           "type" : "paragraph"
         },
         {
-          "anchor" : "Differences-Between-Opaque-Types-and-Protocol-Types",
+          "anchor" : "Boxed-Protocol-Types",
           "level" : 2,
-          "text" : "Differences Between Opaque Types and Protocol Types",
+          "text" : "Boxed Protocol Types",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A boxed protocol type is also sometimes called an ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "existential type",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which comes from the phrase",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "“there exists a type ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "T",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " such that ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "T",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " conforms to the protocol”.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "To make a boxed protocol type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "write ",
+              "type" : "text"
+            },
+            {
+              "code" : "any",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " before the name of a protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Here’s an example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "struct VerticalShapes: Shape {",
+            "    var shapes: [any Shape]",
+            "    func draw() -> String {",
+            "        return shapes.map { $0.draw() }.joined(separator: \"\\n\\n\")",
+            "    }",
+            "}",
+            "",
+            "let largeTriangle = Triangle(size: 5)",
+            "let largeSquare = Square(size: 5)",
+            "let vertical = VerticalShapes(shapes: [largeTriangle, largeSquare])",
+            "print(vertical.draw())"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the example above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "VerticalShapes",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " declares the type of ",
+              "type" : "text"
+            },
+            {
+              "code" : "shapes",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " as ",
+              "type" : "text"
+            },
+            {
+              "code" : "[any Shape]",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "an array of boxed ",
+              "type" : "text"
+            },
+            {
+              "code" : "Shape",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " elements.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Each element in the array can be a different type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and each of those types must conform to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Shape",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "To support this runtime flexibility,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift adds a level of indirection when necessary —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "this indirection is called a ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "box",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and it has a performance cost.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Within the ",
+              "type" : "text"
+            },
+            {
+              "code" : "VerticalShapes",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the code can use methods, properties, and subscripts",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that are required by the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Shape",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example, the ",
+              "type" : "text"
+            },
+            {
+              "code" : "draw()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " method of ",
+              "type" : "text"
+            },
+            {
+              "code" : "VerticalShapes",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "calls the ",
+              "type" : "text"
+            },
+            {
+              "code" : "draw()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " method on each element of the array.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This method is available because ",
+              "type" : "text"
+            },
+            {
+              "code" : "Shape",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " requires a ",
+              "type" : "text"
+            },
+            {
+              "code" : "draw()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " method.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In contrast,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "trying to access the ",
+              "type" : "text"
+            },
+            {
+              "code" : "size",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " property of the triangle,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or any other properties or methods that aren’t required by ",
+              "type" : "text"
+            },
+            {
+              "code" : "Shape",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "produces an error.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Contrast the three types you could use for ",
+              "type" : "text"
+            },
+            {
+              "code" : "shapes",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Using generics,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "by writing ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "struct VerticalShapes<S: Shape>",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " and ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "var shapes: [S]",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "makes an array whose elements are some specific shape type,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and where the identity of that specific type",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "is visible to any code that interacts with the array.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Using an opaque type,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "by writing ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "var shapes: [some Shape]",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "makes an array whose elements are some specific shape type,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and where that specific type’s identify is hidden.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Using a boxed protocol type,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "by writing ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "var shapes: [any Shape]",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "makes an array that can store elements of different types,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and where those types’ identities are hidden.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In this case,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "a boxed protocol type is the only approach",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that lets callers of ",
+              "type" : "text"
+            },
+            {
+              "code" : "VerticalShapes",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " mix different kinds of shapes together.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can use an ",
+              "type" : "text"
+            },
+            {
+              "code" : "as",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " cast",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when you know the underlying type of a boxed value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "if let downcastTriangle = vertical.shapes[0] as? Triangle {",
+            "    print(downcastTriangle.size)",
+            "}",
+            "\/\/ Prints \"5\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For more information, see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TypeCasting#Downcasting",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Differences-Between-Opaque-Types-and-Boxed-Protocol-Types",
+          "level" : 2,
+          "text" : "Differences Between Opaque Types and Boxed Protocol Types",
           "type" : "heading"
         },
         {
@@ -1564,7 +2271,7 @@
               "type" : "text"
             },
             {
-              "text" : "to using a protocol type as the return type of a function,",
+              "text" : "to using a boxed protocol type as the return type of a function,",
               "type" : "text"
             },
             {
@@ -1604,7 +2311,7 @@
               "type" : "text"
             },
             {
-              "text" : "a protocol type can refer to any type that conforms to the protocol.",
+              "text" : "a boxed protocol type can refer to any type that conforms to the protocol.",
               "type" : "text"
             },
             {
@@ -1620,7 +2327,7 @@
               "type" : "text"
             },
             {
-              "text" : "protocol types give you more flexibility",
+              "text" : "boxed protocol types give you more flexibility",
               "type" : "text"
             },
             {
@@ -1673,7 +2380,7 @@
               "type" : "text"
             },
             {
-              "text" : "that uses a protocol type as its return type",
+              "text" : "that uses a boxed protocol type as its return type",
               "type" : "text"
             },
             {
@@ -2116,7 +2823,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Using a protocol type as the return type for a function",
+              "text" : "Using a boxed protocol type as the return type for a function",
               "type" : "text"
             },
             {
@@ -2172,7 +2879,7 @@
               "type" : "text"
             },
             {
-              "text" : "that isn’t preserved by using a protocol type.",
+              "text" : "that isn’t preserved by using a boxed protocol type.",
               "type" : "text"
             }
           ],
@@ -2237,7 +2944,7 @@
               "type" : "text"
             },
             {
-              "text" : "However, a value of a protocol type doesn’t conform to that protocol;",
+              "text" : "However, a value of a boxed protocol type doesn’t conform to that protocol;",
               "type" : "text"
             },
             {
@@ -2338,7 +3045,7 @@
               "type" : "text"
             },
             {
-              "text" : "in places where a protocol type can’t be used as a return value.",
+              "text" : "in places where a boxed protocol type can’t be used as a return value.",
               "type" : "text"
             },
             {
@@ -2667,6 +3374,49 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -2689,7 +3439,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -2716,6 +3466,28 @@
   "title" : "The Problem That Opaque Types Solve",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/opaquetypes#The-Problem-That-Opaque-Types-Solve"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TypeCasting#Downcasting": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TypeCasting#Downcasting",
+  "kind" : "section",
+  "title" : "Downcasting",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/typecasting#Downcasting"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

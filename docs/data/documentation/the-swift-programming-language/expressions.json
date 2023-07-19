@@ -3769,6 +3769,33 @@
                 {
                   "inlineContent" : [
                     {
+                      "text" : "conditional-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "primary-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
                       "text" : "closure-expression",
                       "type" : "text"
                     }
@@ -3878,6 +3905,33 @@
                   "inlineContent" : [
                     {
                       "text" : "wildcard-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "primary-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "macro-expansion-expression",
                       "type" : "text"
                     }
                   ],
@@ -4018,648 +4072,7 @@
               "type" : "text"
             },
             {
-              "text" : "a playground literal,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "or one of the following special literals:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "header" : "row",
-          "rows" : [
-            [
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Literal",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Type",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Value",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#file",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "String",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "The path to the file in which it appears.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#fileID",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "String",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "The name of the file and module in which it appears.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#filePath",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "String",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "The path to the file in which it appears.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#line",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "Int",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "The line number on which it appears.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#column",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "Int",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "The column number in which it begins.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#function",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "String",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "The name of the declaration in which it appears.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#dsohandle",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "UnsafeRawPointer",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ],
-              [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "The dynamic shared object (DSO) handle in use where it appears.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            ]
-          ],
-          "type" : "table"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The string value of ",
-              "type" : "text"
-            },
-            {
-              "code" : "#file",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " depends on the language version,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "to enable migration from the old ",
-              "type" : "text"
-            },
-            {
-              "code" : "#filePath",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " behavior",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "to the new ",
-              "type" : "text"
-            },
-            {
-              "code" : "#fileID",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " behavior.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Currently, ",
-              "type" : "text"
-            },
-            {
-              "code" : "#file",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " has the same value as ",
-              "type" : "text"
-            },
-            {
-              "code" : "#filePath",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "In a future version of Swift,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "code" : "#file",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " will have the same value as ",
-              "type" : "text"
-            },
-            {
-              "code" : "#fileID",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " instead.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "To adopt the future behavior,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "replace ",
-              "type" : "text"
-            },
-            {
-              "code" : "#file",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " with ",
-              "type" : "text"
-            },
-            {
-              "code" : "#fileID",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " or ",
-              "type" : "text"
-            },
-            {
-              "code" : "#filePath",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " as appropriate.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The string value of a ",
-              "type" : "text"
-            },
-            {
-              "code" : "#fileID",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " expression has the form ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "module",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : "\/",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "file",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "where ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "file",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " is the name of the file in which the expression appears",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "module",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " is the name of the module that this file is part of.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "The string value of a ",
-              "type" : "text"
-            },
-            {
-              "code" : "#filePath",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " expression",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "is the full file-system path to the file in which the expression appears.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Both of these values can be changed by ",
-              "type" : "text"
-            },
-            {
-              "code" : "#sourceLocation",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "as described in ",
-              "type" : "text"
-            },
-            {
-              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Statements#Line-Control-Statement",
-              "isActive" : true,
-              "type" : "reference"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Because ",
-              "type" : "text"
-            },
-            {
-              "code" : "#fileID",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " doesn’t embed the full path to the source file,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "unlike ",
-              "type" : "text"
-            },
-            {
-              "code" : "#filePath",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "it gives you better privacy and reduces the size of the compiled binary.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Avoid using ",
-              "type" : "text"
-            },
-            {
-              "code" : "#filePath",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " outside of tests, build scripts,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "or other code that doesn’t become part of the shipping program.",
+              "text" : "or a playground literal.",
               "type" : "text"
             }
           ],
@@ -4670,7 +4083,51 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "To parse a ",
+                  "text" : "",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "Prior to Swift 5.9,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "the following special literals were recognized:",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#column",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#dsohandle",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
                   "type" : "text"
                 },
                 {
@@ -4678,7 +4135,7 @@
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : " expression,",
+                  "text" : ",",
                   "type" : "text"
                 },
                 {
@@ -4686,15 +4143,11 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "read the module name as the text before the first slash (",
-                  "type" : "text"
-                },
-                {
-                  "code" : "\/",
+                  "code" : "#filePath",
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : ")",
+                  "text" : ",",
                   "type" : "text"
                 },
                 {
@@ -4702,28 +4155,139 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "and the filename as the text after the last slash.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "In the future, the string might contain multiple slashes,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "such as ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "MyModule\/some\/disambiguation\/MyFile.swift",
+                  "code" : "#file",
                   "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#function",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "and ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#line",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "These are now implemented as macros in the Swift standard library:",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/column",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/dsohandle",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/fileID",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/filePath",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/file",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "and ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/line",
+                  "isActive" : true,
+                  "type" : "reference"
                 },
                 {
                   "text" : ".",
@@ -4736,120 +4300,6 @@
           "name" : "Note",
           "style" : "note",
           "type" : "aside"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Inside a function,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "the value of ",
-              "type" : "text"
-            },
-            {
-              "code" : "#function",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " is the name of that function,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "inside a method it’s the name of that method,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "inside a property getter or setter it’s the name of that property,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "inside special members like ",
-              "type" : "text"
-            },
-            {
-              "code" : "init",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " or ",
-              "type" : "text"
-            },
-            {
-              "code" : "subscript",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "it’s the name of that keyword,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and at the top level of a file it’s the name of the current module.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "When used as the default value of a function or method parameter,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "the special literal’s value is determined",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "when the default value expression is evaluated at the call site.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "func logFunctionName(string: String = #function) {",
-            "    print(string)",
-            "}",
-            "func myFunction() {",
-            "    logFunctionName() \/\/ Prints \"myFunction()\".",
-            "}"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
         },
         {
           "inlineContent" : [
@@ -5340,125 +4790,6 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "literal-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#file",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " | ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#fileID",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " | ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#filePath",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "literal-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#line",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " | ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#column",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " | ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#function",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " | ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "#dsohandle",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
                 }
               ],
               "type" : "paragraph"
@@ -7098,6 +6429,947 @@
             }
           ],
           "name" : "Grammar of a superclass expression",
+          "style" : "note",
+          "type" : "aside"
+        },
+        {
+          "anchor" : "Conditional-Expression",
+          "level" : 3,
+          "text" : "Conditional Expression",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "conditional expression",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " evaluates to one of several given values",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "based on the value of a condition.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "It has one the following forms:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "if <#condition 1#> {",
+            "   <#expression used if condition 1 is true#>",
+            "} else if <#condition 2#> {",
+            "   <#expression used if condition 2 is true#>",
+            "} else {",
+            "   <#expression used if both conditions are false#>",
+            "}",
+            "",
+            "switch <#expression#> {",
+            "case <#pattern 1#>:",
+            "    <#expression 1#>",
+            "case <#pattern 2#> where <#condition#>:",
+            "    <#expression 2#>",
+            "default:",
+            "    <#expression 3#>",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A conditional expression",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "has the same behavior and syntax as an ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement or a ",
+              "type" : "text"
+            },
+            {
+              "code" : "switch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "except for the differences that the paragraphs below describe.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A conditional expression appears only in the following contexts:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "As the value assigned to a variable.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "As the initial value in a variable or constant declaration.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "As the error thrown by a ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "throw",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " expression.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "As the value returned by a function, closure, or property getter.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "As the value inside a branch of a conditional expression.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The branches of a conditional expression are exhaustive,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "ensuring that the expression always produces a value",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "regardless of the condition.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This means each ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " branch needs a corresponding ",
+              "type" : "text"
+            },
+            {
+              "code" : "else",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " branch.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Each branch contains either a single expression,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which is used as the value for the conditional expression",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when that branch’s conditional is true,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "a ",
+              "type" : "text"
+            },
+            {
+              "code" : "throw",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or a call to a function that never returns.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Each branch must produce a value of the same type.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Because type checking of each branch is independent,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you sometimes need to specify the value’s type explicitly,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "like when branches include different kinds of literals,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or when a branch’s value is ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "When you need to provide this information,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "add a type annotation to the variable that the result is assigned to,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or add an ",
+              "type" : "text"
+            },
+            {
+              "code" : "as",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " cast to the branches’ values.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let number: Double = if someCondition { 10 } else { 12.34 }",
+            "let number = if someCondition { 10 as Double } else { 12.34 }"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Inside a result builder,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "conditional expressions can appear",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "only as the initial value of a variable or constant.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This behavior means when you write ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " or ",
+              "type" : "text"
+            },
+            {
+              "code" : "switch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in a result builder —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "outside of a variable or constant declaration —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that code is understood as a branch statement",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and one of the result builder’s methods transforms that code.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Don’t put a conditional expression in a ",
+              "type" : "text"
+            },
+            {
+              "code" : "try",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "even if one of the branches of a conditional expression is throwing.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "conditional-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "if-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " | ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "switch-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "if-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "if",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "condition-list",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "{",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "statement",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "}",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "if-expression-tail",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "if-expression-tail",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "else",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "if-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "if-expression-tail",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "else",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "{",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "statement",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "}",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "switch-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "switch",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "{",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "switch-expression-cases",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "}",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "switch-expression-cases",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "switch-expression-case",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "switch-expression-cases",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "?",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "switch-expression-case",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "case-label",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "statement",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "switch-expression-case",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "default-label",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "statement",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Grammar of a conditional expression",
           "style" : "note",
           "type" : "aside"
         },
@@ -10563,6 +10835,263 @@
             }
           ],
           "name" : "Grammar of a wildcard expression",
+          "style" : "note",
+          "type" : "aside"
+        },
+        {
+          "anchor" : "Macro-Expansion-Expression",
+          "level" : 3,
+          "text" : "Macro-Expansion Expression",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "macro-expansion expression",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " consists of a macro name",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "followed by a comma-separated list of the macro’s arguments in parentheses.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The macro is expanded at compile time.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Macro-expansion expressions have the following form:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "<#macro name#>(<#macro argument 1#>, <#macro argument 2#>)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A macro-expansion expression omits the parentheses",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "if the macro doesn’t take any arguments.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A macro expression can’t appear as the default value for a parameter,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "except for the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/file",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/line",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " macros from the Swift standard library.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "When used as the default value of a function or method parameter,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "These macros’ value is determined",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when the default value expression is evaluated at the call site.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "macro-expansion-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "#",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "identifier",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "generic-argument-clause",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "?",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "function-call-argument-clause",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "?",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "trailing-closures",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "?",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Grammar of a macro-expansion expression",
           "style" : "note",
           "type" : "aside"
         },
@@ -17538,6 +18067,49 @@
           "name" : "Grammar of an optional-chaining expression",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -17560,7 +18132,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -17730,16 +18302,6 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/functions#In-Out-Parameters"
 },
-"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Statements#Line-Control-Statement": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Statements#Line-Control-Statement",
-  "kind" : "section",
-  "title" : "Line Control Statement",
-  "type" : "topic",
-  "url" : "\/documentation\/the-swift-programming-language\/statements#Line-Control-Statement"
-},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TypeCasting": {
   "abstract" : [
     {
@@ -17753,6 +18315,102 @@
   "title" : "Type Casting",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/typecasting"
+},
+"http://developer.apple.com/documentation/swift/documentation/swift/file": {
+  "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/file",
+  "title" : "file",
+  "titleInlineContent" : [
+    {
+      "code" : "file",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/file"
+},
+"http://developer.apple.com/documentation/swift/documentation/swift/line": {
+  "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/line",
+  "title" : "line",
+  "titleInlineContent" : [
+    {
+      "code" : "line",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/line"
+},
+"https://developer.apple.com/documentation/swift/column": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/column",
+  "title" : "column",
+  "titleInlineContent" : [
+    {
+      "code" : "column",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/column"
+},
+"https://developer.apple.com/documentation/swift/dsohandle": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/dsohandle",
+  "title" : "dsohandle",
+  "titleInlineContent" : [
+    {
+      "code" : "dsohandle",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/dsohandle"
+},
+"https://developer.apple.com/documentation/swift/file": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/file",
+  "title" : "file",
+  "titleInlineContent" : [
+    {
+      "code" : "file",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/file"
+},
+"https://developer.apple.com/documentation/swift/fileID": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/fileID",
+  "title" : "fileID",
+  "titleInlineContent" : [
+    {
+      "code" : "fileID",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/fileID"
+},
+"https://developer.apple.com/documentation/swift/filePath": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/filePath",
+  "title" : "filePath",
+  "titleInlineContent" : [
+    {
+      "code" : "filePath",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/filePath"
+},
+"https://developer.apple.com/documentation/swift/function": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function",
+  "title" : "function",
+  "titleInlineContent" : [
+    {
+      "code" : "function",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/function"
 },
 "https://developer.apple.com/documentation/swift/imported_c_and_objective_c_apis/working_with_foundation_types": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/imported_c_and_objective_c_apis\/working_with_foundation_types",
@@ -17777,6 +18435,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/keypath"
+},
+"https://developer.apple.com/documentation/swift/line": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/line",
+  "title" : "line",
+  "titleInlineContent" : [
+    {
+      "code" : "line",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/line"
 },
 "https://developer.apple.com/documentation/swift/operator_declarations": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/operator_declarations",
@@ -17825,6 +18495,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/library\/content\/documentation\/Cocoa\/Conceptual\/KeyValueObserving\/KeyValueObserving.html#\/\/apple_ref\/doc\/uid\/10000177i"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 },
 "https://help.apple.com/xcode/mac/current/#/dev4c60242fc": {
   "identifier" : "https:\/\/help.apple.com\/xcode\/mac\/current\/#\/dev4c60242fc",

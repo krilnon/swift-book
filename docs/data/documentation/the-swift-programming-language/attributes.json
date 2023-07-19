@@ -191,6 +191,561 @@
           "type" : "paragraph"
         },
         {
+          "anchor" : "attached",
+          "level" : 3,
+          "text" : "attached",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Apply the ",
+              "type" : "text"
+            },
+            {
+              "code" : "attached",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " attribute to a macro declaration.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The arguments to this attribute indicate the macro’s role.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For a macro that has multiple roles,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "apply the ",
+              "type" : "text"
+            },
+            {
+              "code" : "attached",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " macro multiple times, once for each role.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The first argument to this attribute",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "indicates the macros role:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Write ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "peer",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " as the first argument to this attribute. The type that implements the macro conforms to the ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "PeerMacro",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " protocol. These macros produce new declarations in the same scope as the declaration that the macro is attached to. For example, applying a peer macro to a method of a structure can define additional methods and properties on that structure.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "text" : "Peer macros",
+                    "type" : "text"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Write ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "member",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " as the first argument to this attribute. The type that implements the macro conforms to the ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "MemberMacro",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " protocol. These macros produce new declarations that are members of the type or extension that the macro is attached to. For example, applying a member macro to a structure declaration can define additional methods and properties on that structure.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "text" : "Member macros",
+                    "type" : "text"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Write ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "memberAttribute",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " as the first argument to this attribute. The type that implements the macro conforms to the ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "MemberAttributeMacro",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " protocol. These macros add attributes to members of the type or extension that the macro is attached to.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "text" : "Member attribute",
+                    "type" : "text"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Write ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "accessor",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " as the first argument to this attribute. The type that implements the macro conforms to the ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "AccessorMacro",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " protocol. These macros add accessors to the stored property they’re attached to, turning it into a computed property.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "text" : "Accessor macros",
+                    "type" : "text"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Write ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "conformance",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " as the first argument to this attribute. The type that implements the macro conforms to the ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "ConformanceMacro",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " protocol. These macros add protocol conformance to the type they’re attached to.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "text" : "Conformance macros",
+                    "type" : "text"
+                  }
+                ]
+              }
+            }
+          ],
+          "type" : "termList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The peer, member, and accessor macro roles require a ",
+              "type" : "text"
+            },
+            {
+              "code" : "named:",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " argument,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "listing the names of the symbols that the macro generates.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "When a macro declaration includes the ",
+              "type" : "text"
+            },
+            {
+              "code" : "named:",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " argument,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the macro implementation must generate",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "only symbol with names that match that list.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "That said,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "a macro need not generate a symbol for every listed name.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The value for that argument is a list of one or more of the following:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "named(<#name#>)",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "where ",
+                      "type" : "text"
+                    },
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "name",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "emphasis"
+                    },
+                    {
+                      "text" : " is that fixed symbol name,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "for a name that’s known in advance.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "overloaded",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "for a name that’s the same as an existing symbol.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "prefixed(<#prefix#>)",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "where ",
+                      "type" : "text"
+                    },
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "prefix",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "emphasis"
+                    },
+                    {
+                      "text" : " is prepended to the symbol name,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "for a name that starts with a fixed string.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "suffixed(<#suffix#>",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "where ",
+                      "type" : "text"
+                    },
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "suffix",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "emphasis"
+                    },
+                    {
+                      "text" : " is appended to the symbol name,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "for a name that ends with a fixed string.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "arbitrary",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "for a name that can’t be determined until macro expansion.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "As a special case,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can write ",
+              "type" : "text"
+            },
+            {
+              "code" : "prefixed($)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for a macro that behaves similar to a property wrapper.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "anchor" : "available",
           "level" : 3,
           "text" : "available",
@@ -379,6 +934,19 @@
                   "inlineContent" : [
                     {
                       "code" : "tvOSApplicationExtension",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "visionOS",
                       "type" : "codeVoice"
                     }
                   ],
@@ -2174,6 +2742,37 @@
           ],
           "syntax" : "swift",
           "type" : "codeListing"
+        },
+        {
+          "anchor" : "freestanding",
+          "level" : 3,
+          "text" : "freestanding",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Apply the ",
+              "type" : "text"
+            },
+            {
+              "code" : "freestanding",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " attribute",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to the declaration of a freestanding macro.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
         },
         {
           "anchor" : "frozen",
@@ -5304,7 +5903,7 @@
               "type" : "text"
             },
             {
-              "text" : "The ",
+              "text" : "A result builder must implement either the ",
               "type" : "text"
             },
             {
@@ -5312,7 +5911,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " method is required;",
+              "text" : " method",
               "type" : "text"
             },
             {
@@ -5320,7 +5919,35 @@
               "type" : "text"
             },
             {
-              "text" : "the other methods —",
+              "text" : "or both the ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(first:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(accumulated:next:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " methods.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The other methods —",
               "type" : "text"
             },
             {
@@ -5486,7 +6113,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The result-building methods are as follows:",
+              "text" : "The block-building methods are as follows:",
               "type" : "text"
             }
           ],
@@ -5500,7 +6127,7 @@
                   {
                     "inlineContent" : [
                       {
-                        "text" : "Combines an array of partial results into a single partial result. A result builder must implement this method.",
+                        "text" : "Combines an array of partial results into a single partial result.",
                         "type" : "text"
                       }
                     ],
@@ -5517,6 +6144,187 @@
                 ]
               }
             },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Builds a partial result component from the first component. Implement both this method and ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "buildPartialBlock(accumulated:next:)",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " to support building blocks one component at a time. Compared to ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "buildBlock(_:)",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : ", this approach reduces the need for generic overloads that handle different numbers of arguments.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "static func buildPartialBlock(first: Component) -> Component",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Builds a partial result component by combining an accumulated component with a new component. Implement both this method and ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "buildPartialBlock(first:)",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " to support building blocks one component at a time. Compared to ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "buildBlock(_:)",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : ", this approach reduces the need for generic overloads that handle different numbers of arguments.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "static func buildPartialBlock(accumulated: Component, next: Component) -> Component",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            }
+          ],
+          "type" : "termList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A result builder can implement all three of the block-building methods listed above;",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in that case, availability determines which method is called.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "By default, Swift calls the ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(first:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(accumulated:next:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "methods. To make Swift call ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildBlock(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " instead,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "mark the enclosing declaration as being available",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "before the availability you write on ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(first:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(accumulated:next:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The additional result-building methods are as follows:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
             {
               "definition" : {
                 "content" : [
@@ -9594,6 +10402,49 @@
           "name" : "Grammar of an attribute",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -9616,7 +10467,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -9881,6 +10732,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/library\/content\/documentation\/Cocoa\/Conceptual\/ProgrammingWithObjectiveC\/Introduction\/Introduction.html#\/\/apple_ref\/doc\/uid\/TP40011210"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 },
 "https://help.apple.com/xcode/mac/current/#/dev04b3a04ba": {
   "identifier" : "https:\/\/help.apple.com\/xcode\/mac\/current\/#\/dev04b3a04ba",

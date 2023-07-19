@@ -1824,11 +1824,11 @@
             "    var street: String?",
             "    func buildingIdentifier() -> String? {",
             "        if let buildingNumber = buildingNumber, let street = street {",
-            "          return \"\\(buildingNumber) \\(street)\"",
+            "            return \"\\(buildingNumber) \\(street)\"",
             "        } else if buildingName != nil {",
-            "          return buildingName",
+            "            return buildingName",
             "        } else {",
-            "          return nil",
+            "            return nil",
             "        }",
             "    }",
             "}"
@@ -4140,6 +4140,49 @@
           "name" : "Note",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -4162,7 +4205,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -4195,6 +4238,18 @@
   "title" : "Optional Chaining as an Alternative to Forced Unwrapping",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/optionalchaining#Optional-Chaining-as-an-Alternative-to-Forced-Unwrapping"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

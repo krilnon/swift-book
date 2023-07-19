@@ -108,14 +108,13 @@
             {
               "text" : "to transfer the flow of execution to another point in your code.",
               "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
+            },
             {
-              "text" : "Swift also provides a ",
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift provides a ",
               "type" : "text"
             },
             {
@@ -140,6 +139,30 @@
             },
             {
               "text" : "arrays, dictionaries, ranges, strings, and other sequences.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift also provides ",
+              "type" : "text"
+            },
+            {
+              "code" : "defer",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statements,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which wrap code to be executed when leaving the current scope.",
               "type" : "text"
             }
           ],
@@ -3247,9 +3270,9 @@
             "if temperatureInFahrenheit <= 32 {",
             "    print(\"It's very cold. Consider wearing a scarf.\")",
             "} else {",
-            "    print(\"It's not that cold. Wear a t-shirt.\")",
+            "    print(\"It's not that cold. Wear a T-shirt.\")",
             "}",
-            "\/\/ Prints \"It's not that cold. Wear a t-shirt.\""
+            "\/\/ Prints \"It's not that cold. Wear a T-shirt.\""
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -3336,7 +3359,7 @@
             "} else if temperatureInFahrenheit >= 86 {",
             "    print(\"It's really warm. Don't forget to wear sunscreen.\")",
             "} else {",
-            "    print(\"It's not that cold. Wear a t-shirt.\")",
+            "    print(\"It's not that cold. Wear a T-shirt.\")",
             "}",
             "\/\/ Prints \"It's really warm. Don't forget to wear sunscreen.\""
           ],
@@ -3378,7 +3401,7 @@
               "type" : "text"
             },
             {
-              "text" : "and it prints a response for any temperatures that are neither too warm nor too cold.",
+              "text" : "and it prints a response for any temperatures that aren’t too warm or too cold.",
               "type" : "text"
             }
           ],
@@ -3424,7 +3447,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Because the temperature is neither too cold nor too warm to trigger the ",
+              "text" : "Because the temperature isn’t cold enough to trigger the ",
               "type" : "text"
             },
             {
@@ -3432,7 +3455,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " or ",
+              "text" : " condition",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or warm enough to trigger the ",
               "type" : "text"
             },
             {
@@ -3440,7 +3471,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " conditions,",
+              "text" : " condition,",
               "type" : "text"
             },
             {
@@ -3449,6 +3480,795 @@
             },
             {
               "text" : "no message is printed.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Swift provides a shorthand spelling of ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that you can use when setting values.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "consider the following code:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let temperatureInCelsius = 25",
+            "let weatherAdvice: String",
+            "",
+            "if temperatureInCelsius <= 0 {",
+            "    weatherAdvice = \"It's very cold. Consider wearing a scarf.\"",
+            "} else if temperatureInCelsius >= 30 {",
+            "    weatherAdvice = \"It's really warm. Don't forget to wear sunscreen.\"",
+            "} else {",
+            "    weatherAdvice = \"It's not that cold. Wear a T-shirt.\"",
+            "}",
+            "",
+            "print(weatherAdvice)",
+            "\/\/ Prints \"It's not that cold. Wear a T-shirt.\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Here, each of the branches sets a value for the ",
+              "type" : "text"
+            },
+            {
+              "code" : "weatherAdvice",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " constant,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which is printed after the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Using the alternate syntax,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "known as an ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can write this code more concisely:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let weatherAdvice = if temperatureInCelsius <= 0 {",
+            "    \"It's very cold. Consider wearing a scarf.\"",
+            "} else if temperatureInCelsius >= 30 {",
+            "    \"It's really warm. Don't forget to wear sunscreen.\"",
+            "} else {",
+            "    \"It's not that cold. Wear a T-shirt.\"",
+            "}",
+            "",
+            "print(weatherAdvice)",
+            "\/\/ Prints \"It's not that cold. Wear a T-shirt.\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In this ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression version,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "each branch contains a single value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If a branch’s condition is true,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "then that branch’s value is used as the value for the whole ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in the assignment of ",
+              "type" : "text"
+            },
+            {
+              "code" : "weatherAdvice",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Every ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " branch has a corresponding ",
+              "type" : "text"
+            },
+            {
+              "code" : "else if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " branch or ",
+              "type" : "text"
+            },
+            {
+              "code" : "else",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " branch,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "ensuring that one of the branches always matches",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and that the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression always produces a value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "regardless of which conditions are true.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Because the syntax for the assignment starts outside the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "there’s no need to repeat ",
+              "type" : "text"
+            },
+            {
+              "code" : "weatherAdvice =",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " inside each branch.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Instead,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "each branch of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "produces one of the three possible values for ",
+              "type" : "text"
+            },
+            {
+              "code" : "weatherAdvice",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the assignment uses that value.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "All of the branches of an ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "need to contain values of the same type.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Because Swift checks the type of each branch separately,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "values like ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " that can be used with more than one type",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "prevent Swift from determining the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression’s type automatically.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Instead, you need to specify the type explicitly —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let freezeWarning: String? = if temperatureInCelsius <= 0 {",
+            "    \"It's below freezing. Watch for ice!\"",
+            "} else {",
+            "    nil",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the code above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "one branch of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression has a string value",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the other branch has a ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " value could be used as a value for any optional type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "so you have to explicitly write that ",
+              "type" : "text"
+            },
+            {
+              "code" : "freezeWarning",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is an optional string,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as described in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics#Type-Annotations",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "An alternate way to provide this type information",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is to provide an explicit type for ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "instead of providing an explicit type for ",
+              "type" : "text"
+            },
+            {
+              "code" : "freezeWarning",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let freezeWarning = if temperatureInCelsius <= 0 {",
+            "    \"It's below freezing. Watch for ice!\"",
+            "} else {",
+            "    nil as String?",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "An ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression can respond to unexpected failures by throwing an error",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or calling a function like ",
+              "type" : "text"
+            },
+            {
+              "code" : "fatalError(_:file:line:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " that never returns.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let weatherAdvice = if temperatureInCelsius > 100 {",
+            "    throw TemperatureError.boiling",
+            "} else {",
+            "    \"It's a reasonable temperature.\"",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In this example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression checks whether the forecast temperature",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is hotter than 100° C — the boiling point of water.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "A temperature this hot causes the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression to throw a ",
+              "type" : "text"
+            },
+            {
+              "code" : ".boiling",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " error",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "instead of returning a textual summary.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Even though this ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression can throw an error,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you don’t write ",
+              "type" : "text"
+            },
+            {
+              "code" : "try",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " before it.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For information about working with errors, see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In addition to using ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expressions",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "on the right-hand side of an assignment,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as shown in the examples above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can also use them as the value that a function or closure returns.",
               "type" : "text"
             }
           ],
@@ -3845,13 +4665,13 @@
             "let someCharacter: Character = \"z\"",
             "switch someCharacter {",
             "case \"a\":",
-            "    print(\"The first letter of the alphabet\")",
+            "    print(\"The first letter of the Latin alphabet\")",
             "case \"z\":",
-            "    print(\"The last letter of the alphabet\")",
+            "    print(\"The last letter of the Latin alphabet\")",
             "default:",
             "    print(\"Some other character\")",
             "}",
-            "\/\/ Prints \"The last letter of the alphabet\""
+            "\/\/ Prints \"The last letter of the Latin alphabet\""
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -3988,6 +4808,219 @@
             },
             {
               "text" : " statement is exhaustive.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Like ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statements,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "switch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statements also have an expression form:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let anotherCharacter: Character = \"a\"",
+            "let message = switch anotherCharacter {",
+            "case \"a\":",
+            "    \"The first letter of the Latin alphabet\"",
+            "case \"z\":",
+            "    \"The last letter of the Latin alphabet\"",
+            "default:",
+            "    \"Some other character\"",
+            "}",
+            "",
+            "print(message)",
+            "\/\/ Prints \"The first letter of the Latin alphabet\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In this example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "each case in the ",
+              "type" : "text"
+            },
+            {
+              "code" : "switch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expression",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "contains the value for ",
+              "type" : "text"
+            },
+            {
+              "code" : "message",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to be used when that case matches ",
+              "type" : "text"
+            },
+            {
+              "code" : "anotherCharacter",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Because ",
+              "type" : "text"
+            },
+            {
+              "code" : "switch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is always exhaustive,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "there is always a value to assign.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "As with ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expressions,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can throw an error",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or call a function like ",
+              "type" : "text"
+            },
+            {
+              "code" : "fatalError(_:file:line:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " that never returns",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "instead of providing a value for a given case.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You can use ",
+              "type" : "text"
+            },
+            {
+              "code" : "switch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " expressions",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "on the right-hand side of an assignment,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as shown in the example above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and as the value that a function or closure returns.",
               "type" : "text"
             }
           ],
@@ -8954,6 +9987,490 @@
           "type" : "paragraph"
         },
         {
+          "anchor" : "Deferred-Actions",
+          "level" : 2,
+          "text" : "Deferred Actions",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Unlike control-flow constructs like ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "while",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which let you control whether part of your code is executed",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or how many times it gets executed,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "defer",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " controls ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "when",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " a piece of code is executed.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You use a ",
+              "type" : "text"
+            },
+            {
+              "code" : "defer",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " block to write code that will be executed later,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when your program reaches the end of the current scope.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "var score = 1",
+            "if score < 10 {",
+            "    defer {",
+            "        print(score)",
+            "    }",
+            "    score += 5",
+            "}",
+            "\/\/ Prints \"6\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the example above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the code inside of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "defer",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " block is executed",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "before exiting the body of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "First, the code in the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement runs,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which increments ",
+              "type" : "text"
+            },
+            {
+              "code" : "score",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " by five.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Then, before exiting the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement’s scope,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the deferred code is run, which prints ",
+              "type" : "text"
+            },
+            {
+              "code" : "score",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The code inside of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "defer",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " always runs,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "regardless of how the program exits that scope.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "That includes code like an early exit from a function,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "breaking out of a ",
+              "type" : "text"
+            },
+            {
+              "code" : "for",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " loop,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or throwing an error.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This behavior makes ",
+              "type" : "text"
+            },
+            {
+              "code" : "defer",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " useful for operations",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "where you need to guarantee a pair of actions happen —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "like manually allocating and freeing memory,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "opening and closing low-level file descriptors,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and beginning and ending transactions in a database —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "because you can write both actions next to each other in your code.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the following code gives a temporary bonus to the score,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "by adding and subtracting 100 inside a chunk of code:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "var score = 3",
+            "if score < 100 {",
+            "    score += 100",
+            "    defer {",
+            "        score -= 100",
+            "    }",
+            "    \/\/ Other code that uses the score with its bonus goes here.",
+            "    print(score)",
+            "}",
+            "\/\/ Prints \"103\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If you write more than one ",
+              "type" : "text"
+            },
+            {
+              "code" : "defer",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " block in the same scope,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the first one you specify is the last one to run.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "if score < 10 {",
+            "    defer {",
+            "        print(score)",
+            "    }",
+            "    defer {",
+            "        print(\"The score is:\")",
+            "    }",
+            "    score += 5",
+            "}",
+            "\/\/ Prints \"The score is:\"",
+            "\/\/ Prints \"6\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If your program stops running —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for example, because of a runtime error or a crash —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "deferred code doesn’t execute.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "However, deferred code does execute after an error is thrown;",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for information about using ",
+              "type" : "text"
+            },
+            {
+              "code" : "defer",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " with error handling,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling#Specifying-Cleanup-Actions",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "anchor" : "Checking-API-Availability",
           "level" : 2,
           "text" : "Checking API Availability",
@@ -9483,6 +11000,49 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -9568,7 +11128,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -9636,6 +11196,20 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/controlflow#Fallthrough"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ErrorHandling": {
+  "abstract" : [
+    {
+      "text" : "Respond to and recover from errors.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Error Handling",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/errorhandling"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ErrorHandling#Propagating-Errors-Using-Throwing-Functions": {
   "abstract" : [
 
@@ -9645,6 +11219,16 @@
   "title" : "Propagating Errors Using Throwing Functions",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/errorhandling#Propagating-Errors-Using-Throwing-Functions"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ErrorHandling#Specifying-Cleanup-Actions": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling#Specifying-Cleanup-Actions",
+  "kind" : "section",
+  "title" : "Specifying Cleanup Actions",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/errorhandling#Specifying-Cleanup-Actions"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Functions": {
   "abstract" : [
@@ -9660,6 +11244,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/functions"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TheBasics#Type-Annotations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics#Type-Annotations",
+  "kind" : "section",
+  "title" : "Type Annotations",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/thebasics#Type-Annotations"
+},
 "https://developer.apple.com/documentation/swift/sequence": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/sequence",
   "title" : "Sequence",
@@ -9671,6 +11265,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/sequence"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 },
 "snakesAndLadders": {
   "alt" : null,

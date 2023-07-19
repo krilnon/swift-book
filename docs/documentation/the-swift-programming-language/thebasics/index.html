@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="icon" href="/swift-book/favicon.ico"><link rel="mask-icon" href="/swift-book/favicon.svg" color="#333333"><title>Documentation</title><script>var baseUrl = "/swift-book/"</script><link href="/swift-book/css/chunk-384ef189.7ede1ea3.css" rel="prefetch"><link href="/swift-book/css/documentation-topic.29351f99.css" rel="prefetch"><link href="/swift-book/css/documentation-topic~topic.fccbd76c.css" rel="prefetch"><link href="/swift-book/css/documentation-topic~topic~tutorials-overview.1099452b.css" rel="prefetch"><link href="/swift-book/css/topic.726a35dc.css" rel="prefetch"><link href="/swift-book/css/tutorials-overview.2a582c39.css" rel="prefetch"><link href="/swift-book/js/chunk-2d0d3105.cd72cc8e.js" rel="prefetch"><link href="/swift-book/js/chunk-384ef189.ae15f487.js" rel="prefetch"><link href="/swift-book/js/documentation-topic.551da24e.js" rel="prefetch"><link href="/swift-book/js/documentation-topic~topic.d8c7871a.js" rel="prefetch"><link href="/swift-book/js/documentation-topic~topic~tutorials-overview.a79046d1.js" rel="prefetch"><link href="/swift-book/js/highlight-js-bash.1b52852f.js" rel="prefetch"><link href="/swift-book/js/highlight-js-c.d1db3f17.js" rel="prefetch"><link href="/swift-book/js/highlight-js-cpp.eaddddbe.js" rel="prefetch"><link href="/swift-book/js/highlight-js-css.75eab1fe.js" rel="prefetch"><link href="/swift-book/js/highlight-js-custom-markdown.7cffc4b3.js" rel="prefetch"><link href="/swift-book/js/highlight-js-custom-swift.5cda5c20.js" rel="prefetch"><link href="/swift-book/js/highlight-js-diff.62d66733.js" rel="prefetch"><link href="/swift-book/js/highlight-js-http.163e45b6.js" rel="prefetch"><link href="/swift-book/js/highlight-js-java.8326d9d8.js" rel="prefetch"><link href="/swift-book/js/highlight-js-javascript.acb8a8eb.js" rel="prefetch"><link href="/swift-book/js/highlight-js-json.471128d2.js" rel="prefetch"><link href="/swift-book/js/highlight-js-llvm.6100b125.js" rel="prefetch"><link href="/swift-book/js/highlight-js-markdown.90077643.js" rel="prefetch"><link href="/swift-book/js/highlight-js-objectivec.bcdf5156.js" rel="prefetch"><link href="/swift-book/js/highlight-js-perl.757d7b6f.js" rel="prefetch"><link href="/swift-book/js/highlight-js-php.cc8d6c27.js" rel="prefetch"><link href="/swift-book/js/highlight-js-python.c214ed92.js" rel="prefetch"><link href="/swift-book/js/highlight-js-ruby.f889d392.js" rel="prefetch"><link href="/swift-book/js/highlight-js-scss.62ee18da.js" rel="prefetch"><link href="/swift-book/js/highlight-js-shell.dd7f411f.js" rel="prefetch"><link href="/swift-book/js/highlight-js-swift.84f3e88c.js" rel="prefetch"><link href="/swift-book/js/highlight-js-xml.9c3688c7.js" rel="prefetch"><link href="/swift-book/js/topic.1a5e25bb.js" rel="prefetch"><link href="/swift-book/js/tutorials-overview.dfa583f0.js" rel="prefetch"><link href="/swift-book/css/index.d5b499b0.css" rel="preload" as="style"><link href="/swift-book/js/chunk-vendors.b24b7aaa.js" rel="preload" as="script"><link href="/swift-book/js/index.476f557b.js" rel="preload" as="script"><link href="/swift-book/css/index.d5b499b0.css" rel="stylesheet"></head><body data-color-scheme="auto"><template id="custom-footer"><!--
+<!doctype html><html lang="en-US"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="icon" href="/swift-book/favicon.ico"><link rel="mask-icon" href="/swift-book/favicon.svg" color="#333333"><title>Documentation</title><script>var baseUrl = "/swift-book/"</script><script defer="defer" src="/swift-book/js/chunk-vendors.028f1670.js"></script><script defer="defer" src="/swift-book/js/index.5fe29b77.js"></script><link href="/swift-book/css/index.b741258c.css" rel="stylesheet"></head><body data-color-scheme="auto"><template id="custom-footer"><!--
 This source file is part of the Swift.org open source project
 
 Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
@@ -114,6 +114,7 @@ See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
   <script type="text/javascript">
     // DocC uses this local storage key to persist appearance preferences.
     const appearanceKey = 'developer.setting.preferredColorScheme'
+    const searchKey = 'developer.setting.pageContentQuery'
     window.addEventListener('DOMContentLoaded', _ => {
       let appearancePreference = localStorage.getItem(appearanceKey)
       if (appearancePreference) {
@@ -129,24 +130,232 @@ See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
           .querySelector(`#scheme-auto`)
           .checked = true
       }
+
+      setTimeout(prepareSearch, 1000)
+      setTimeout(resolveSearch, 500)
     })
 
     // Set a color scheme based on user choice and persist it.
     function doccAppearance(mode) {
+      document.body.dataset.colorScheme = mode
       switch(mode) {
       case 'light':
         localStorage.setItem(appearanceKey, mode)
-        document.body.dataset.colorScheme = mode
         break
       case 'dark':
         localStorage.setItem(appearanceKey, mode)
-        document.body.dataset.colorScheme = mode
         break
       case 'auto':
         localStorage.removeItem(appearanceKey)
-        document.body.dataset.colorScheme = 'auto'
         break
       }
+    }
+
+    function resolveSearch() {
+      let query = localStorage.getItem(searchKey)
+      if(query) {
+        localStorage.removeItem(searchKey)
+        document.location.hash = `#:~:text=${ encodeURIComponent(query) }`
+      }
+    }
+
+    function prepareSearch() {
+      let searchModalParent = document.querySelector('.vue-portal-target')
+
+      let observer = new MutationObserver((list, observer) => {
+        let target = document.querySelector('.vue-portal-target')
+
+        if (target.children.length == 1) {
+          let searchField = target.querySelector('input')
+          searchField.addEventListener('beforeinput', e => {
+            let query = searchField.value + (e.data ? e.data : '')
+            console.log(`search for ${ query }`)
+            let results = search(query)
+            console.log(results.length, results)
+
+            setTimeout(_ => {
+              let noNormalResults = document.querySelector('.no-results')
+              let someNormalResults = document.querySelector('.quick-navigation__match-list')
+              if(noNormalResults) {
+                noNormalResults.innerHTML = ''
+                for(result of results) {
+                  noNormalResults.appendChild(resultElement(result))
+                }
+              } else if(someNormalResults) {
+                document.querySelector('.quick-navigation__match-list').style.display = 'block'
+                someNormalResults.innerHTML = ''
+                for(result of results) {
+                  someNormalResults.appendChild(resultElement(result))
+                }
+              } else {
+                noNormalResults.innerHTML = ''
+                someNormalResults.innerHTML = ''
+              }
+            }, 300)
+
+          })
+        }
+      })
+
+      observer.observe(searchModalParent, { childList: true })
+
+      downloadSearchIndex()
+        .then(chapters => bookChapters = chapters)
+    }
+
+    let bookContents = [
+      '/swift-book/data/documentation/the-swift-programming-language/aboutswift.json',
+      '/swift-book/data/documentation/the-swift-programming-language/compatibility.json',
+      '/swift-book/data/documentation/the-swift-programming-language/guidedtour.json',
+      '/swift-book/data/documentation/the-swift-programming-language/thebasics.json',
+      '/swift-book/data/documentation/the-swift-programming-language/basicoperators.json',
+      '/swift-book/data/documentation/the-swift-programming-language/stringsandcharacters.json',
+      '/swift-book/data/documentation/the-swift-programming-language/collectiontypes.json',
+      '/swift-book/data/documentation/the-swift-programming-language/controlflow.json',
+      '/swift-book/data/documentation/the-swift-programming-language/functions.json',
+      '/swift-book/data/documentation/the-swift-programming-language/closures.json',
+      '/swift-book/data/documentation/the-swift-programming-language/enumerations.json',
+      '/swift-book/data/documentation/the-swift-programming-language/classesandstructures.json',
+      '/swift-book/data/documentation/the-swift-programming-language/properties.json',
+      '/swift-book/data/documentation/the-swift-programming-language/methods.json',
+      '/swift-book/data/documentation/the-swift-programming-language/subscripts.json',
+      '/swift-book/data/documentation/the-swift-programming-language/inheritance.json',
+      '/swift-book/data/documentation/the-swift-programming-language/initialization.json',
+      '/swift-book/data/documentation/the-swift-programming-language/deinitialization.json',
+      '/swift-book/data/documentation/the-swift-programming-language/optionalchaining.json',
+      '/swift-book/data/documentation/the-swift-programming-language/errorhandling.json',
+      '/swift-book/data/documentation/the-swift-programming-language/concurrency.json',
+      '/swift-book/data/documentation/the-swift-programming-language/macros.json',
+      '/swift-book/data/documentation/the-swift-programming-language/typecasting.json',
+      '/swift-book/data/documentation/the-swift-programming-language/nestedtypes.json',
+      '/swift-book/data/documentation/the-swift-programming-language/extensions.json',
+      '/swift-book/data/documentation/the-swift-programming-language/protocols.json',
+      '/swift-book/data/documentation/the-swift-programming-language/generics.json',
+      '/swift-book/data/documentation/the-swift-programming-language/opaquetypes.json',
+      '/swift-book/data/documentation/the-swift-programming-language/automaticreferencecounting.json',
+      '/swift-book/data/documentation/the-swift-programming-language/memorysafety.json',
+      '/swift-book/data/documentation/the-swift-programming-language/accesscontrol.json',
+      '/swift-book/data/documentation/the-swift-programming-language/advancedoperators.json',
+      '/swift-book/data/documentation/the-swift-programming-language/aboutthelanguagereference.json',
+      '/swift-book/data/documentation/the-swift-programming-language/lexicalstructure.json',
+      '/swift-book/data/documentation/the-swift-programming-language/types.json',
+      '/swift-book/data/documentation/the-swift-programming-language/expressions.json',
+      '/swift-book/data/documentation/the-swift-programming-language/statements.json',
+      '/swift-book/data/documentation/the-swift-programming-language/declarations.json',
+      '/swift-book/data/documentation/the-swift-programming-language/attributes.json',
+      '/swift-book/data/documentation/the-swift-programming-language/patterns.json',
+      '/swift-book/data/documentation/the-swift-programming-language/genericparametersandarguments.json',
+      '/swift-book/data/documentation/the-swift-programming-language/summaryofthegrammar.json'
+    ]
+
+    let bookChapters = []
+
+    // FIXME: This shouldn't be a global.
+    let lastResultPage = ''
+
+    async function downloadSearchIndex() {
+      let chapters = []
+      for(let url of bookContents) {
+        let chapterResponse = await fetch(url)
+        let chapter = await chapterResponse.json()
+        console.log('Chapter debug', chapter)
+        chapters.push(chapter)
+      }
+
+      return chapters
+    }
+
+    function search(query) {
+      let results = []
+      for (chapter of bookChapters) {
+        lastResultPage = (new URL(chapter.identifier.url)).pathname.split('/').at(-1)
+        let result = leafNodeSearch(query, chapter.primaryContentSections[0].content)
+        results.push(...result)
+      }
+
+      return results
+    }
+
+    function leafNodeSearch(query, contents) {
+      let results = []
+      for(content of contents) {
+        if(content.code) {
+          let result = searchCode(query, content.code)
+          results.push(...result)
+        } else if (content.inlineContent) {
+          let result = searchInlineContent(query, content.inlineContent)
+          results.push(...result)
+        } else if (content.anchor) {
+          let result = searchAnchor(query, content)
+          results.push(...result)
+        } else if (content.items) {
+          let result = searchItems(query, content.items)
+          results.push(...result)
+        }
+      }
+      return results
+    }
+
+    function searchCode(query, codeArray) {
+      let results = []
+      for(line of codeArray) {
+        if(line.includes(query)) {
+          results.push({ match: line, type: 'code', page: lastResultPage })
+        }
+      }
+
+      return results
+    }
+
+    function searchInlineContent(query, contentArray) {
+      let results = []
+      for(element of contentArray) {
+        if(element.text && element.text.includes(query)) {
+          results.push({ match: element.text, type: 'text', page: lastResultPage })
+        } else if(element.code && element.code.includes(query)) {
+          results.push({ match: element.code, type: 'code', page: lastResultPage })
+        }
+      }
+
+      return results
+    }
+
+    function searchItems(query, items) {
+      let results = []
+      for(item of items) {
+        if(item.content && item.content[0] && item.content[0].inlineContent) {
+          results.push(...searchInlineContent(query, item.content[0].inlineContent))
+        }
+      }
+
+      return results
+    }
+
+    function searchAnchor(query, anchor) {
+      if(anchor.text.toLowerCase().includes(query.toLowerCase())) {
+        return [{ match: anchor.text, type: 'anchor', page: lastResultPage }]
+      }
+      return []
+    }
+
+    let nodeMap = {
+      'text': 'SPAN',
+      'code': 'PRE',
+      'anchor': 'STRONG'
+    }
+
+    function resultElement(result) {
+      let wrapper = document.createElement('DIV')
+      let node = document.createElement(nodeMap[result.type])
+      node.innerText = result.match
+      wrapper.appendChild(node)
+      wrapper.style.border = 'dotted'
+      wrapper.style.cursor = 'pointer'
+      wrapper.addEventListener('click', _ => {
+        localStorage.setItem(searchKey, result.match)
+        document.location.href = `/swift-book/documentation/the-swift-programming-language/${result.page.toLowerCase()}`
+      })
+      return wrapper
     }
   </script>
 </footer>
@@ -168,10 +377,10 @@ See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
             This is the development version of <em>The Swift Programming Language</em> book.
         </p>
         <p>
-            For the current shipping book, see <a href="https://docs.swift.org/swift-book/">Swift.org</a>.
+            For the current shipping book, see <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/">Swift.org</a>.
             To contribute to this documentation, see the <a href="https://github.com/apple/swift-book">swift-book project</a> on GitHub.
         </p>
         </aside>
     </div>
 </header>
-</template><noscript><style>.noscript{font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;margin:92px auto 140px auto;text-align:center;width:980px}.noscript-title{color:#111;font-size:48px;font-weight:600;letter-spacing:-.003em;line-height:1.08365;margin:0 auto 54px auto;width:502px}@media only screen and (max-width:1068px){.noscript{margin:90px auto 120px auto;width:692px}.noscript-title{font-size:40px;letter-spacing:0;line-height:1.1;margin:0 auto 45px auto;width:420px}}@media only screen and (max-width:735px){.noscript{margin:45px auto 60px auto;width:87.5%}.noscript-title{font-size:32px;letter-spacing:.004em;line-height:1.125;margin:0 auto 35px auto;max-width:330px;width:auto}}#loading-placeholder{display:none}</style><div class="noscript"><h1 class="noscript-title">This page requires JavaScript.</h1><p>Please turn on JavaScript in your browser and refresh the page to view its content.</p></div></noscript><div id="app"></div><script src="/swift-book/js/chunk-vendors.b24b7aaa.js"></script><script src="/swift-book/js/index.476f557b.js"></script></body></html>
+</template><noscript>[object Module]</noscript><div id="app"></div></body></html>

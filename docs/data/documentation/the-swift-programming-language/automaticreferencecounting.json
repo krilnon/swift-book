@@ -6644,15 +6644,7 @@
               "type" : "text"
             },
             {
-              "text" : "neither the ",
-              "type" : "text"
-            },
-            {
-              "code" : "HTMLElement",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " instance nor its closure are deallocated,",
+              "text" : "the strong reference cycle prevents deallocating",
               "type" : "text"
             },
             {
@@ -6660,7 +6652,15 @@
               "type" : "text"
             },
             {
-              "text" : "because of the strong reference cycle:",
+              "text" : "both the ",
+              "type" : "text"
+            },
+            {
+              "code" : "HTMLElement",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " instance and its closure:",
               "type" : "text"
             }
           ],
@@ -7463,6 +7463,49 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -7527,7 +7570,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -7602,6 +7645,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/library\/content\/releasenotes\/ObjectiveC\/RN-TransitioningToARC\/Introduction\/Introduction.html"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 },
 "referenceCycle01": {
   "alt" : null,

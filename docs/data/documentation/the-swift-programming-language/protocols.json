@@ -233,6 +233,94 @@
           "type" : "codeListing"
         },
         {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Because protocols are types,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "begin their names with a capital letter",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "(such as ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "FullyNamed",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " and ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "RandomNumberGenerator",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ")",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "to match the names of other types in Swift",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "(such as ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "Int",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ", ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "String",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ", and ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "Double",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ").",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Note",
+          "style" : "note",
+          "type" : "aside"
+        },
+        {
           "anchor" : "Property-Requirements",
           "level" : 2,
           "text" : "Property Requirements",
@@ -2163,7 +2251,16 @@
               "type" : "text"
             },
             {
-              "text" : "Nonetheless,",
+              "text" : "Regardless, you can use a protocol as a type in your code.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The most common way to use a protocol as a type",
               "type" : "text"
             },
             {
@@ -2171,7 +2268,7 @@
               "type" : "text"
             },
             {
-              "text" : "you can use protocols as a fully fledged types in your code.",
+              "text" : "is to use a protocol as a generic constraint.",
               "type" : "text"
             },
             {
@@ -2179,13 +2276,175 @@
               "type" : "text"
             },
             {
-              "text" : "Using a protocol as a type is sometimes called an ",
+              "text" : "Code with generic constraints can work with",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "any type that conforms to the protocol,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the specific type is chosen by the code that uses the API.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when you call a function that takes an argument",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and that argument’s type is generic,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the caller chooses the type.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Code with an opaque type",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "works with some type that conforms to the protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The underlying type is known at compile time,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the API implementation chooses that type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "but that type’s identity is hidden from clients of the API.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Using an opaque type lets you prevent implementation details of an API",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "from leaking through the layer of abstraction —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for example, by hiding the specific return type from a function,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and only guaranteeing that the value conforms to a given protocol.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Code with a boxed protocol type",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "works with any type, chosen at runtime, that conforms to the protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "To support this runtime flexibility,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift adds a level of indirection when necessary —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "known as a ",
               "type" : "text"
             },
             {
               "inlineContent" : [
                 {
-                  "text" : "existential type",
+                  "text" : "box",
                   "type" : "text"
                 }
               ],
@@ -2200,7 +2459,7 @@
               "type" : "text"
             },
             {
-              "text" : "which comes from the phrase",
+              "text" : "which has a performance cost.",
               "type" : "text"
             },
             {
@@ -2208,33 +2467,47 @@
               "type" : "text"
             },
             {
-              "text" : "“there exists a type ",
+              "text" : "Because of this flexibility,",
               "type" : "text"
             },
             {
-              "inlineContent" : [
-                {
-                  "text" : "T",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " such that ",
+              "text" : " ",
               "type" : "text"
             },
             {
-              "inlineContent" : [
-                {
-                  "text" : "T",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
+              "text" : "Swift doesn’t know the underlying type at compile time,",
+              "type" : "text"
             },
             {
-              "text" : " conforms to the protocol”.",
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which means you can access only the members",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that are required by the protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Accessing any other APIs on the underlying type",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "requires casting at runtime.",
               "type" : "text"
             }
           ],
@@ -2243,182 +2516,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "You can use a protocol in many places where other types are allowed, including:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "items" : [
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "As a parameter type or return type in a function, method, or initializer",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            },
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "As the type of a constant, variable, or property",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            },
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "As the type of items in an array, dictionary, or other container",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            }
-          ],
-          "type" : "unorderedList"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Because protocols are types,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "begin their names with a capital letter",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "(such as ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "FullyNamed",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " and ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "RandomNumberGenerator",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ")",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "to match the names of other types in Swift",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "(such as ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "Int",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ", ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "String",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ", and ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "Double",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ").",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Note",
-          "style" : "note",
-          "type" : "aside"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Here’s an example of a protocol used as a type:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "class Dice {",
-            "    let sides: Int",
-            "    let generator: RandomNumberGenerator",
-            "    init(sides: Int, generator: RandomNumberGenerator) {",
-            "        self.sides = sides",
-            "        self.generator = generator",
-            "    }",
-            "    func roll() -> Int {",
-            "        return Int(generator.random() * Double(sides)) + 1",
-            "    }",
-            "}"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "This example defines a new class called ",
-              "type" : "text"
-            },
-            {
-              "code" : "Dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
+              "text" : "For information about using protocols as generic constraints,",
               "type" : "text"
             },
             {
@@ -2426,102 +2524,13 @@
               "type" : "text"
             },
             {
-              "text" : "which represents an ",
+              "text" : "see ",
               "type" : "text"
             },
             {
-              "inlineContent" : [
-                {
-                  "text" : "n",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : "-sided dice for use in a board game.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "code" : "Dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " instances have an integer property called ",
-              "type" : "text"
-            },
-            {
-              "code" : "sides",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "which represents how many sides they have,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and a property called ",
-              "type" : "text"
-            },
-            {
-              "code" : "generator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "which provides a random number generator",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "from which to create dice roll values.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The ",
-              "type" : "text"
-            },
-            {
-              "code" : "generator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " property is of type ",
-              "type" : "text"
-            },
-            {
-              "code" : "RandomNumberGenerator",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Generics",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : ".",
@@ -2532,7 +2541,7 @@
               "type" : "text"
             },
             {
-              "text" : "Therefore, you can set it to an instance of",
+              "text" : "For information about opaque types, and boxed protocol types,",
               "type" : "text"
             },
             {
@@ -2540,136 +2549,11 @@
               "type" : "text"
             },
             {
-              "inlineContent" : [
-                {
-                  "text" : "any",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " type that adopts the ",
+              "text" : "see ",
               "type" : "text"
             },
             {
-              "code" : "RandomNumberGenerator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " protocol.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Nothing else is required of the instance you assign to this property,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "except that the instance must adopt the ",
-              "type" : "text"
-            },
-            {
-              "code" : "RandomNumberGenerator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " protocol.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Because its type is ",
-              "type" : "text"
-            },
-            {
-              "code" : "RandomNumberGenerator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "code inside the ",
-              "type" : "text"
-            },
-            {
-              "code" : "Dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " class can only interact with ",
-              "type" : "text"
-            },
-            {
-              "code" : "generator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "in ways that apply to all generators that conform to this protocol.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "That means it can’t use any methods or properties",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "that are defined by the underlying type of the generator.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "However, you can downcast from a protocol type to an underlying type",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "in the same way you can downcast from a superclass to a subclass,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "as discussed in ",
-              "type" : "text"
-            },
-            {
-              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TypeCasting#Downcasting",
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes",
               "isActive" : true,
               "type" : "reference"
             },
@@ -2679,240 +2563,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "code" : "Dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " also has an initializer, to set up its initial state.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "This initializer has a parameter called ",
-              "type" : "text"
-            },
-            {
-              "code" : "generator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "which is also of type ",
-              "type" : "text"
-            },
-            {
-              "code" : "RandomNumberGenerator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "You can pass a value of any conforming type in to this parameter",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "when initializing a new ",
-              "type" : "text"
-            },
-            {
-              "code" : "Dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " instance.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "code" : "Dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " provides one instance method, ",
-              "type" : "text"
-            },
-            {
-              "code" : "roll",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "which returns an integer value between 1 and the number of sides on the dice.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "This method calls the generator’s ",
-              "type" : "text"
-            },
-            {
-              "code" : "random()",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " method to create",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "a new random number between ",
-              "type" : "text"
-            },
-            {
-              "code" : "0.0",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " and ",
-              "type" : "text"
-            },
-            {
-              "code" : "1.0",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and uses this random number to create a dice roll value within the correct range.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Because ",
-              "type" : "text"
-            },
-            {
-              "code" : "generator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " is known to adopt ",
-              "type" : "text"
-            },
-            {
-              "code" : "RandomNumberGenerator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "it’s guaranteed to have a ",
-              "type" : "text"
-            },
-            {
-              "code" : "random()",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " method to call.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Here’s how the ",
-              "type" : "text"
-            },
-            {
-              "code" : "Dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " class can be used to create a six-sided dice",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "with a ",
-              "type" : "text"
-            },
-            {
-              "code" : "LinearCongruentialGenerator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " instance as its random number generator:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "var d6 = Dice(sides: 6, generator: LinearCongruentialGenerator())",
-            "for _ in 1...5 {",
-            "    print(\"Random dice roll is \\(d6.roll())\")",
-            "}",
-            "\/\/ Random dice roll is 3",
-            "\/\/ Random dice roll is 5",
-            "\/\/ Random dice roll is 4",
-            "\/\/ Random dice roll is 5",
-            "\/\/ Random dice roll is 4"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
         },
         {
           "anchor" : "Delegation",
@@ -10288,6 +9938,49 @@
           "name" : "Note",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -10310,7 +10003,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -10382,6 +10075,20 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/extensions"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Generics": {
+  "abstract" : [
+    {
+      "text" : "Write code that works for multiple types and specify requirements for those types.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Generics",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Generics",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/generics"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Generics#Generic-Where-Clauses": {
   "abstract" : [
 
@@ -10431,6 +10138,20 @@
   "title" : "Modifying Value Types from Within Instance Methods",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/methods#Modifying-Value-Types-from-Within-Instance-Methods"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/OpaqueTypes": {
+  "abstract" : [
+    {
+      "text" : "Hide implementation details about a value’s type.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Opaque and Boxed Types",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/opaquetypes"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/OptionalChaining": {
   "abstract" : [
@@ -10490,15 +10211,17 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/typecasting"
 },
-"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TypeCasting#Downcasting": {
-  "abstract" : [
-
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
   ],
-  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TypeCasting#Downcasting",
-  "kind" : "section",
-  "title" : "Downcasting",
-  "type" : "topic",
-  "url" : "\/documentation\/the-swift-programming-language\/typecasting#Downcasting"
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }
